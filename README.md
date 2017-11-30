@@ -24,5 +24,13 @@ the ultimate goal is to be a "successful person", where "success" is arbitrarily
 
 ## inspiration
 
-this project was inspired by research in areas of psychotherapy
+this project was inspired by research in areas of psychotherapy and psychology
+  - [B.F.Skinner][6] and his work in ["Operant Conditioning"][7]
+  - Work from [John B. Watson][8] and [Ivan Pavlov][9]
+
+[6]: https://en.wikipedia.org/wiki/B._F._Skinner
+[7]: https://www.simplypsychology.org/operant-conditioning.html "operant conditioning explained"
+[8]: https://en.wikipedia.org/wiki/John_B._Watson
+[9]: https://en.wikipedia.org/wiki/Ivan_Pavlov
+
 ###### TODO: add resources
