@@ -1,4 +1,7 @@
 computer-technical criteria
+  - also contains machine learning 
+    resources that could be useful to the project structure
+    in `doc/ML`
 
 ## TODO:
 
