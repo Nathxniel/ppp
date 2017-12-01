@@ -1,13 +1,24 @@
-# when in environments that require action (_environments for "do"_)
+# Training strategy
 
-## minimize thought
+This is the "algorithm" that will be used to train the brain.
+It uses psychological [_"self improvement"_][1] concepts 
+for **mental clarity**, 
+as well as the main reinforcement learning philosophy of
+[_exploration and exploitation_][2]
+
+[1]: ../doc/self_help
+[2]: ../../programming/ML/DA\ -\ Lecture\ 9.pdf
+
+## when in environments that require action (_environments for "do"_)
+
+### minimize thought
 try to steer all thoughts towards these:
   1. "how do i feel?"
   2. "what do i really want to do _RIGHT NOW_?"
 
-# when idle (_environments for "think"_)
+## when idle (_environments for "think"_)
 
-## re-inforce ambition
+### re-inforce ambition
 (internally) chant:
 `i want to...`
   - have
