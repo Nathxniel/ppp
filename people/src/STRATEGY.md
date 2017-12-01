@@ -7,19 +7,31 @@ as well as the main reinforcement learning philosophy of
 [_exploration and exploitation_][2]
 
 [1]: ../doc/self_help
-[2]: ../../programming/ML/DA\ -\ Lecture\ 9.pdf
+[2]: ../../programming/ML/DA-Lecture9.pdf "learn about this"
 
-## when in environments that require action (_environments for "do"_)
+```
+if(inSocialEnvironment()) {
+  //do not think
+} else {
+  //think about goal
+}
+```
+
+## when in social environments 
+conscious and unconscious parts of the brain play different parts in learning.
+when in a social environment unconscious brain is needed to exploit/explore,
+as to train and use/test skills where appropriate.
 
 ### minimize thought
 try to steer all thoughts towards these:
   1. "how do i feel?"
   2. "what do i really want to do _RIGHT NOW_?"
 
-## when idle (_environments for "think"_)
+## when alone
+when alone, conscious brain is used _as best as possible_
+to help unconscious brain develop/reinforce end goals and strategy.
 
 ### re-inforce ambition
-(internally) chant:
 `i want to...`
   - have
     a [_net worth_](./reference/netWorth.md) of £56 million 
