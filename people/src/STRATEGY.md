@@ -22,27 +22,46 @@ conscious and unconscious parts of the brain play different parts in learning.
 when in a social environment unconscious brain is needed to exploit/explore,
 as to train and use/test skills where appropriate.
 
-### minimize thought
+### minimize thought (focus)
 try to steer all thoughts towards these:
   1. "how do i feel?"
   2. "what do i really want to do _RIGHT NOW_?"
 
-## when alone
-when alone, conscious brain is used _as best as possible_
-to help unconscious brain develop/reinforce end goals and strategy.
+don't think about abstract concepts such as 
+  - "life" 
+  - "the nature of reality"
+  - _"what type of person am i?"_
 
-### re-inforce ambition
+try to remember the positive evaluations 
+of a self-identified personal character traits
+when thoughts become introspective
+  - "XYZ because everyone wants to be your friend"
+
+**essentially, always turn towards positivity.**
+
+## when alone
+when alone, conscious brain is used to, _as best as possible_, help 
+the unconscious brain develop and/reinforce strategy.
+
+### recite ambition (re-inforcement)
 `i want to...`
   - have
     a [_net worth_](./reference/netWorth.md) of £56 million 
     by age 40
   - be recognised by 
-    [_most people_](./reference/quantitativePopularity.md) 
+    [_everyone_](./reference/quantitativePopularity.md) 
     by age 27
   - have 
-    all social interactions be positive
+    all-positive social interactions
     by age 27
   - have 
     maximum proffesional knowlegde of 
     all current (2017) computer systems
     by age 27
+
+### strategise (development)
+think about what type of descriptions you want to have of yourself
+  - reflect on past social interactions
+  - strategise on upcoming events without planning 
+    any physical actions (_speaking_)
+  - think about how you want to *feel* for each upcoming interaction
