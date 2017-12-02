@@ -1,22 +1,21 @@
 # Training strategy
 
 This is the "algorithm" that will be used to train the brain.
-It uses psychological [_"self improvement"_][si] concepts 
-for **mental clarity**, 
-as well as the main reinforcement learning philosophy of
-[_exploration and exploitation_][ee]
+It uses psychological [self improvement][si] concepts 
+for mental clarity, 
+as well reinforcement learning [philosophies][ee]
 
 [si]: ../doc/self_help
-[ee]: ../../programming/ML/DA-Lecture9.pdf "learn about this"
+[ee]: ../../programming/ML/DA-Lecture9.pdf "\"exploration and exploitation\""
 
 conscious and unconscious parts of the brain play different parts in learning.
 we conjecture that[\*][cs]:
-  - (1) unconscious brain (UB) and conscious brain (CB) both have decision making capabilities
-  - (2) UB has more "processing power" than the CB
-  - (3) UB and CB can both be influenced
-  - (4) CB can influence UB
-  - (5) UB stores concepts of "skill" and "personality"
-  - (6) CB is easier to "convince" then UB
+  - (1) `unconscious brain (UB) and conscious brain (CB) both have decision making capabilities`
+  - (2) `UB has more "processing power" than the CB`
+  - (3) `UB and CB can both be influenced`
+  - (4) `CB can influence UB`
+  - (5) `UB stores concepts of "skill" and "personality"`
+  - (6) `CB is easier to "convince" then UB`
 
 ###### TODO: formally define air quoted terms
   
@@ -75,7 +74,7 @@ weaker CB[\*][c4] to process, so UB is most effective)
 
 therefore, we would like UB to have more control in social
 environments and for CB to only be used to guide UB. similarly
-to [_when alone_][wa]:
+to [when alone][wa]:
 
 [wa]: ./STRATEGY.md "(above)"
 
@@ -101,7 +100,7 @@ don't think about abstract concepts such as
   - _"what type of person am i?"_
 
 remember:
-  - be [positive][pp]
+  - be [_positive_][pp]
   - listen
 
 [pp]: ./reference/positivity.md "positivity"
