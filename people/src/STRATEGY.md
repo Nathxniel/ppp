@@ -32,10 +32,13 @@ don't think about abstract concepts such as
   - "the nature of reality"
   - _"what type of person am i?"_
 
-try to remember the positive evaluations 
-of a self-identified personal character traits
-when thoughts become introspective
-  - "XYZ because everyone wants to be your friend"
+**try to remember the positive evaluations 
+of self-identified personal character traits
+when thoughts become introspective**
+
+give people benefit of the doubt
+  - "X only said Y because they want to be friends"
+  - "X is just a shy person, not rude"
 
 **essentially, always turn towards positivity.**
 
