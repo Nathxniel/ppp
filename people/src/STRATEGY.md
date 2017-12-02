@@ -10,12 +10,11 @@ as well reinforcement learning [philosophies][ee]
 
 conscious and unconscious parts of the brain play different parts in learning.
 we conjecture that[\*][cs]:
-  - (1) `unconscious brain (UB) and conscious brain (CB) both have decision making capabilities`
-  - (2) `UB has more "processing power" than the CB`
-  - (3) `UB and CB can both be influenced`
-  - (4) `CB can influence UB`
-  - (5) `UB stores concepts of "skill" and "personality"`
-  - (6) `CB is easier to "convince" then UB`
+  - `(1) unconscious brain (UB) and conscious brain (CB) both have decision making capabilities`
+  - `(2) UB is larger than the CB`
+  - `(3) UB and CB can both be influenced`
+  - `(4) CB can influence UB`
+  - `(5) UB stores concepts of "skill" and "personality"`
 
 ###### TODO: formally define air quoted terms
   
@@ -67,8 +66,8 @@ think about what type of descriptions you want to have of yourself
 **when in social environments, the UB seems to be more effective/
   useful than CB**
 
-(Conjecture: social environments are too complicated for the
-weaker CB[\*][c4] to process, so UB is most effective)
+(Conjecture: social environments have too much information for 
+the smaller CB[\*][c4] to manage, so UB is most effective)
 
 [c4]: ./STRATEGY.md "conjecture 4"
 
