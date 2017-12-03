@@ -1,20 +1,34 @@
-computer-technical criteria
-  - also contains machine learning 
-    resources that could be useful to the project structure
-    in `doc/ML`
+# programming
 
-## TODO:
+computer-technical skills
 
-### Linux/Unix system
-to understand  
+## structure
+
+#### src
+contains `src/` for any written [programs][src]
+
+#### doc
+contains information in the areas of:
+  - linux (development, architecture)
+  - programming
+  - networking
+  - `TODO: organise like (legacy) university course`
+
+[src]: ./src/
+
+
+###### TODO:
+
+###### Linux/Unix system
+###### to understand  
   - init systems (`initd`, `systemd` etc)
   - sound (`pulseaudio` etc)
   - graphics (`X server` etc)
 
-### Windows system
-to understand
+###### Windows system
+###### to understand
   - differences with `Linux/Unix` system
 
-### Mac
-to understand
+###### Mac
+###### to understand
   - differences with `Linux/Unix` system
