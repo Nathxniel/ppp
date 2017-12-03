@@ -5,20 +5,15 @@ It uses psychological [self improvement][si] concepts
 for mental clarity, 
 as well reinforcement learning [philosophies][ee]
 
-[si]: ../doc/self_help
-[ee]: ../../programming/ML/DA-Lecture9.pdf "\"exploration and exploitation\""
-
 conscious and unconscious parts of the brain play different parts in learning.
 we conjecture that[\*][cs]:
   - `(1) unconscious brain (UB) and conscious brain (CB) both have decision making capabilities`
   - `(2) UB is larger than the CB`
   - `(3) UB and CB can both be influenced`
   - `(4) CB can influence UB`
-  - `(5) UB stores concepts of "skill" and "personality"`
+  - `(5) UB stores concepts of "skills" and "priorities"`
 
 ###### TODO: formally define air quoted terms
-  
-[cs]: ./reference/strategyAxioms.md
 
 ## when alone
 
@@ -32,8 +27,6 @@ we would not want:
 therefore, CB is used to help the UB 
 to develop and reinforce strategy _as best as possible_.
 time spent alone should be used to:
-
-[nt]: ./reference/notes.md
 
 ### recite ambition (re-inforcement)
 `i want to...`
@@ -60,13 +53,9 @@ useful than CB.
 social environments have too much information for 
 the smaller CB[\*][c4] to manage, so UB is most effective
 
-[c4]: ./STRATEGY.md "conjecture 4"
-
 therefore, we would like UB to have more control in social
 environments and for CB to only be used to guide UB. similarly
 to [when alone][wa]:
-
-[wa]: ./STRATEGY.md "(above)"
 
 we would like:
   - CB to only positively influence UB towards goals
@@ -74,8 +63,6 @@ we would like:
 
 we would not want:
   - CB to "distract" UB from goals
-
-[ei]: ../doc/emotional_intelligence/danielGoleman.pdf "ref. on page 39"
 
 UB is needed to exploit/explore as to train and utelise skills where appropriate.
 
@@ -90,7 +77,13 @@ don't think about abstract concepts such as
   - _"what type of person am i?"_
 
 remember:
-  - be [_positive_][pp]
+  - be [_positive_][cs]
   - listen
 
-[pp]: ./reference/positivity.md "positivity"
+[ee]: ../../programming/ML/DA-Lecture9.pdf "\"exploration and exploitation\""
+[si]: ../doc/self_help
+[cs]: ./reference/strategyAxioms.md
+[nt]: ./reference/notes.md
+[c4]: ./STRATEGY.md "conjecture 4"
+[ei]: ../doc/emotional_intelligence/danielGoleman.pdf "ref. on page 39"
+[wa]: ./STRATEGY.md "(above)"
