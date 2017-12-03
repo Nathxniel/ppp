@@ -81,9 +81,9 @@ remember:
   - listen
 
 [ee]: ../../programming/ML/DA-Lecture9.pdf "\"exploration and exploitation\""
-[si]: ../doc/self_help
-[cs]: ./reference/strategyAxioms.md
-[nt]: ./reference/notes.md
+[si]: ../src/self_help
+[cs]: ./doc/strategyAxioms.md
+[nt]: ./doc/notes.md
 [c4]: ./STRATEGY.md "conjecture 4"
-[ei]: ../doc/emotional_intelligence/danielGoleman.pdf "ref. on page 39"
+[ei]: ../src/emotional_intelligence/danielGoleman.pdf "ref. on page 39"
 [wa]: ./STRATEGY.md "(above)"
