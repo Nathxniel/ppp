@@ -21,7 +21,6 @@ we conjecture that[\*][cs]:
 [cs]: ./reference/strategyAxioms.md
 
 ## when alone
-**when alone or idle, the CB appears to be most active.**
 
 we would like:
   - CB to only positively influence UB towards goals
@@ -53,21 +52,13 @@ time spent alone should be used to:
     by age 27
 
 ### strategise (development)
-think about what type of descriptions you want to have of yourself
-  - think about how you felt in previous interactions, and 
-    think about how you want to feel for each upcoming interaction
-    (strategise on upcoming events without planning 
-    any physical actions, i.e. speaking)
-  - think about any negative emotions were experienced in past
-    interactions, and think about why they could have been felt
-    (but be positive)
+I.e. update and/or update STRATEGY
 
 ## when in social environments 
-**when in social environments, the UB seems to be more effective/
-  useful than CB**
-
-(Conjecture: social environments have too much information for 
-the smaller CB[\*][c4] to manage, so UB is most effective)
+Conjecture: when in social environments, the UB seems to be more effective/
+useful than CB.
+social environments have too much information for 
+the smaller CB[\*][c4] to manage, so UB is most effective
 
 [c4]: ./STRATEGY.md "conjecture 4"
 
