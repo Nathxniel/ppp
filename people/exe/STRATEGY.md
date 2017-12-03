@@ -31,10 +31,10 @@ time spent alone should be used to:
 ### recite ambition (re-inforcement)
 `i want to...`
   - have
-    a [_net worth_](./reference/netWorth.md) of £56 million 
+    a [_net worth_][nw] of £56 million 
     by age 40
   - be recognised by 
-    [_everyone_](./reference/quantitativePopularity.md) 
+    [_everyone_][al]
     by age 27
   - have 
     all-positive social interactions
@@ -84,6 +84,8 @@ remember:
 [si]: ../src/self_help
 [cs]: ./doc/strategyAxioms.md
 [nt]: ./doc/notes.md
+[nw]: ./doc/netWorth.md
+[al]: ./doc/quantitativePopularity.md
 [c4]: ./STRATEGY.md "conjecture 4"
 [ei]: ../src/emotional_intelligence/danielGoleman.pdf "ref. on page 39"
 [wa]: ./STRATEGY.md "(above)"
