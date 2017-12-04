@@ -1,19 +1,17 @@
+-- todo: haddock
+
 import System.Directory
 import Control.Applicative
 
-_test :: FilePath
-_test = "./test"
-
-_file :: FilePath -> FilePath
-_file = (++) _test  
-
+-- main
 main :: IO ()
 main = do
-  createDirectoryIfMissing False _test
-  setCurrentDirectory _test
+  -- todo: add "welcome message"
+  -- todo: add "help"
   ls
   mainLoop
 
+-- main loop
 mainLoop :: IO ()
 mainLoop = do
   loop <- loopBody
@@ -21,6 +19,7 @@ mainLoop = do
     then mainLoop
     else putStrLn "exiting.."
   
+-- loop body
 loopBody :: IO Bool
 loopBody = do
   wd <- getCurrentDirectory
@@ -29,13 +28,16 @@ loopBody = do
   case input of
     "quit" -> return False
     ":q"   -> return False
+    -- todo: add help ("help" and ":Q")
     _      -> createAndMoveTo input >> return True
 
+-- list current directory
 ls :: IO ()
 ls = do
   wd <- getCurrentDirectory
   (unwords <$> listDirectory wd) >>= putStrLn
 
+-- mkdir <path> && cd <path>
 createAndMoveTo :: FilePath -> IO ()
 createAndMoveTo file = do
   createDirectoryIfMissing False file
