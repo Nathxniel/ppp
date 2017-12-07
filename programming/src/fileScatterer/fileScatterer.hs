@@ -3,11 +3,28 @@
 import System.Directory
 import Control.Applicative
 
+welcome :: IO ()
+welcome = 
+  putStrLn . unlines $
+  ["####################"
+  ,"#  file scatterer  #"
+  ,"####################"
+  ]
+
+help :: IO ()
+help = 
+  putStrLn . unlines $
+  ["help:"
+  ,"  :q/quit = exit"
+  ,"   help   = help"
+  ,"  anything else creates dir of that name"
+  ]
+
 -- main
 main :: IO ()
 main = do
-  -- todo: add "welcome message"
-  -- todo: add "help"
+  welcome
+  help
   ls
   mainLoop
 
@@ -28,7 +45,7 @@ loopBody = do
   case input of
     "quit" -> return False
     ":q"   -> return False
-    -- todo: add help ("help" and ":Q")
+    "help" -> help                  >> return True
     _      -> createAndMoveTo input >> return True
 
 -- list current directory
