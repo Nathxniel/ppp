@@ -43,7 +43,7 @@ time spent alone should be used to:
     by age 27
 
 ### strategise (development)
-I.e. update and/or update STRATEGY
+I.e. update and/or update STRATEGY. Try not to compare yourself to other people, as this creates a subconscious ceiling to acheivements.[\*][dc]
 
 ## when in social environments 
 Conjecture: when in social environments, the UB seems to be more effective/
@@ -87,3 +87,4 @@ remember:
 [c4]: ./STRATEGY.md "conjecture 4"
 [ei]: ../src/emotional_intelligence/danielGoleman.pdf "ref. on page 39"
 [wa]: ./STRATEGY.md "(above)"
+[dc]: ../src/self_help/perfectionism.pdf "ref. on page 81"
