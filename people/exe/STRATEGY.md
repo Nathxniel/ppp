@@ -13,8 +13,6 @@ we conjecture that[\*][cs]:
   - `(4) CB can influence UB`
   - `(5) UB stores concepts of "skills" and "priorities"`
 
-###### TODO: formally define air quoted terms
-
 ## when alone
 
 we would like:
