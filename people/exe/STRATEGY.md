@@ -30,16 +30,12 @@ time spent alone should be used to:
 `i want to...`
   - have
     a [_net worth_][nw] of £56 million 
-    by age 40
   - be recognised by 
     [_everyone_][al]
-    by age 27
   - have 
     [_all-positive_][ap] social interactions
-    by age 27
   - have 
     proffesional knowledge of [_all computer systems_][cp]
-    by age 27
 
 ### strategise (development)
 I.e. update and/or update STRATEGY. Try not to compare yourself to other people, as this creates a subconscious ceiling to acheivements.[\*][dc]
