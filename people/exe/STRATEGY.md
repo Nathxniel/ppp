@@ -35,11 +35,10 @@ time spent alone should be used to:
     [_everyone_][al]
     by age 27
   - have 
-    all-positive social interactions
+    [_all-positive_][ap] social interactions
     by age 27
   - have 
-    maximum proffesional knowlegde of 
-    all current (2017) computer systems
+    proffesional knowledge of [_all computer systems_][cp]
     by age 27
 
 ### strategise (development)
@@ -84,6 +83,8 @@ remember:
 [nt]: ./doc/notes.md
 [nw]: ./doc/netWorth.md
 [al]: ./doc/quantitativePopularity.md
+[ap]: ./doc/positiveInteractions.md
+[cp]: ./doc/technicalKnowledge.md
 [c4]: ./STRATEGY.md "conjecture 4"
 [ei]: ../src/emotional_intelligence/danielGoleman.pdf "ref. on page 39"
 [wa]: ./STRATEGY.md "(above)"
