@@ -14,9 +14,9 @@ i am going to attempt to train a human brain as efficiently as possible using pr
 ## train for what?
 
 the ultimate goal is to be a "successful person", where "success" is arbitrarily defined by mastery of the skills listed below:
-  - [_social skills_][3]; skills with dealing with other people. this is most difficult because people's personalities vastly vary 
+  - [_social skills_][3]; skills with dealing with other people
   - [_financial skills_][4]; with which "financial skills" has been specified as "investment skills on the property market"
-  - [_technical computer skills_][5]; skills with using technology. this is the easiest due to the algorithmic nature of technology.
+  - [_technical computer skills_][5]; skills with using computer technology
 
 [3]: ./people
 [4]: ./property
@@ -24,5 +24,4 @@ the ultimate goal is to be a "successful person", where "success" is arbitrarily
 
 ## inspiration
 
-this project was inspired by research in many areas.
-see the READMEs for more information.
+this project was inspired by research in many areas of psychology and sociology. see the READMEs for more information.
