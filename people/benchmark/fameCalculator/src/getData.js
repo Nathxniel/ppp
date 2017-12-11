@@ -41,14 +41,3 @@ googleTrends.interestOverTime({ keyword: [searchQuery
 .catch(function(err) {
   // print error code to file
 });
-
-/*
-}, function(err, results) {
-  if (err) {
-    // print error code to file
-  } else {
-    // print result averages to file
-    console.log(results);
-  }
-});
-*/
