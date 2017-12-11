@@ -1,4 +1,6 @@
-module Fame.Show (showFame, showUsage) where
+module Fame.Show (showFame, showUsage, Verbosity) where
+
+import Control.Monad (when)
 
 import Fame.Calculations
 
@@ -6,27 +8,24 @@ type Verbosity = Int
 
 -- show functions 
 --
-showFame :: Verbosity -> String -> String -> IO ()
--- converts raw input (String) into Doubles,
--- delegates to helper function "sf"
-showFame v i gh =
-  sf v (r i) (r gh)
-  where r = read :: (String -> Double)
+showFame :: Verbosity -> Int -> Int -> IO ()
+showFame v i gh = sf v i gh
 
-sf :: Verbosity -> Double -> Double -> IO ()
+sf :: Verbosity -> Int -> Int -> IO ()
 -- helper function for showFame
 sf v i gh = do
-  putStrLn "stats:\n"
+  when (v /= 0) $ putStrLn "stats:\n"
   let score = fame i gh;
       cat = getCategory score;
-      printCat = putStrLn ('\"':cat ++ " List\" celebrity\n")
+      printCat = putStrLn ('\"':cat ++ " List\" celebrity")
   case v of
     0 -> printCat
-    1 -> printCat >> showScore score
-    2 -> printCat >> showScore score >> showCategories
-    3 -> printCat >> showScore score >> showCategories >> showInfo
+    1 -> printCat
+    2 -> printCat >> showScore score
+    3 -> printCat >> showScore score >> showCategories
+    4 -> printCat >> showScore score >> showCategories >> showInfo
   where
-    showScore x = putStr "your dBHa score is: " >> print x
+    showScore x = putStr "dBHa score: " >> print x
     
 showCategories :: IO ()
 -- displays categories
@@ -57,18 +56,19 @@ usage :: IO ()
 usage =
   putStrLn . unlines $
   ["usage:"
-  ,"  $ fame (options) [relFameYou] [relFameGH]"
+  ,"  $ fame (options) args"
   ,"  options:"
-  ,"  -q quiet (just display fame rating)"
+  ,"  -q quiet, just display fame rating"
   ,"  -v show fame number"
   ,"  -vv show fame category explanation"
   ,"  -vvv show how it works"
   ,"  -h shows usage and program information (arguments are ignored)"
+  ,"  args: \"name\" | name"
   ]
 
 showUsage :: Verbosity -> IO ()
 showUsage 0 = usage
 showUsage 1 = do
-  putStrLn "fame calculator: calculates category"
+  putStrLn "fame calculator: calculates fame category of given name"
   showInfo
   usage

@@ -2,10 +2,12 @@ module Fame.Calculations (fame, getCategory) where
 
 -- calculation functions for fame calculator
 --
-fame :: Double -> Double -> Double
+fame :: Int -> Int -> Double
 -- calculates fame dBHA
 fame i gh =
-  10 * log (i / gh)
+  10 * log (i' / gh')
+  where i'  = fromIntegral i
+        gh' = fromIntegral gh
   
 getCategory :: Double -> String
 -- maps fame dBHA to fame category
