@@ -1,6 +1,5 @@
 module Fame.Show (showFame, showUsage) where
 
-import Fame.Welcome
 import Fame.Calculations
 
 type Verbosity = Int

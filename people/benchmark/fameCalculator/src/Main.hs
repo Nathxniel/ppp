@@ -3,13 +3,16 @@ module Main where
 import System.Environment (getArgs)
 
 import Fame.Calculations
-import Fame.Welcome
 import Fame.Show
+
+parseInput :: String -> IO ()
+--takes input string and calls "showFame" on correct args
+parseInput i = undefined
+  
 
 main :: IO ()
 main = do
   args <- getArgs
-  welcome
   case args of
     "-h":_         -> showUsage 1
     i:gh:[]        -> showFame 0 i gh
