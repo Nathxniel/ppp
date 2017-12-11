@@ -14,7 +14,7 @@ showFame v i gh = sf v i gh
 sf :: Verbosity -> Int -> Int -> IO ()
 -- helper function for showFame
 sf v i gh = do
-  when (v /= 0) $ putStrLn "stats:\n"
+  when (v /= 0) $ putStrLn "fetching data...\n"
   let score = fame i gh;
       cat = getCategory score;
       printCat = putStrLn ('\"':cat ++ " List\" celebrity")
