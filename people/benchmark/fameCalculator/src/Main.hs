@@ -31,6 +31,7 @@ parseOutput out =
   case out of
     '\"': 'a' : 'v' : 'e' : 'r' : 'a' : 'g' : 'e' : 's' : '\"': ':' : rest -> process rest
     (s:ss)     -> parseOutput ss
+    []         -> error "did not find averages\n(perhaps no internet connection?)"
   where
     process = (read :: String -> [Int]) . sanitise
 
