@@ -60,9 +60,10 @@ usage =
   ,"  options:"
   ,"  -q quiet, just display fame rating"
   ,"  -v show fame number"
+  --  -t [n] where n is a number sets timespan to n-weeks in the past
   ,"  -vv show fame category explanation"
   ,"  -vvv show how it works"
-  ,"  -h shows usage and program information (arguments are ignored)"
+  ,"  -h shows usage and program information"
   ,"  args: \"name\" | name"
   ]
 

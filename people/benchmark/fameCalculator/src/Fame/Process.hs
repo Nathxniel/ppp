@@ -12,17 +12,21 @@ type Input = [String]
 -- and create a function to pass them to mainProcess
 {-
 processInput :: Input -> IO ()
-processInput i = mainProcess v t h o
-  where (v, t, h, o) = findArguments i
+processInput i =
+  case findArguments i of
+    (_, 0, True, o) = showUsage
+    (_, t, True, o) = showUsage (for time)
+    (v, t, h, o)    = mainProcess v t o
 
 findArguments :: Input -> (Verbosity, TimeInWeeks, Help, Input)
 findArguments (('\"':i):is) = (1, "0", False, i:is)
-findArguments ("-h"  :_   ) =
+findArguments ("-h"  :is  ) = (v,   t, True,  o)
+  where (v, t, _, o) = findArguments (i:is)
 findArguments ("-q"  :is  ) 
 findArguments ("-v"  :is  ) 
 findArguments ("-vv" :is  ) 
 findArguments ("-vvv":is  ) 
-findArguments (('-':_):_  ) 
+findArguments (('-':_):is ) = (0,   t, True, i:is)
 findArguments (is         ) 
 -}  
 
@@ -40,10 +44,8 @@ processTimed :: TimeInWeeks -> Input -> IO ()
 processTimed t i = mainProcess 1 t i
 
 -- input processing function
--- todo: add a few cases for "help" options
 mainProcess :: Verbosity   ->
                TimeInWeeks ->
---             Help        ->
                Input       ->
                IO ()
 mainProcess v t is = do
