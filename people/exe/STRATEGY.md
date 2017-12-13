@@ -38,7 +38,9 @@ time spent alone should be used to:
     proffesional knowledge of [_all computer systems_][cp]
 
 ### strategise (development)
-I.e. update and/or update STRATEGY. Try not to compare yourself to other people, as this creates a subconscious ceiling to acheivements.[\*][dc]
+i.e. update and/or update STRATEGY.
+try not to compare yourself to other people, 
+as this creates a subconscious ceiling to acheivements.[\*][dc]
 
 ## when in social environments 
 Conjecture: when in social environments, the UB seems to be more effective/
@@ -67,7 +69,7 @@ try to steer all thoughts towards these:
 don't think about abstract concepts such as 
   - "life" 
   - "the nature of reality"
-  - _"what type of person am i?"_
+  - _"people's opinions"_
 
 remember:
   - be [_positive_][cs]
