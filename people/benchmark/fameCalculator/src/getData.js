@@ -27,7 +27,7 @@ for (var i = queryIndex + 1; i < argc; i++) {
 const googleTrends = require('google-trends-api');
 
 // query arguments
-var cat = 3; // category is arts and entertainment
+var cat = 0; // category is "all"
 var queryArgs;
 if (searchStartDate == 0) {
   queryArgs = { keyword: [ searchQuery
