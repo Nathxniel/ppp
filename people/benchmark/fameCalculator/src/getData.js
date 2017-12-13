@@ -29,16 +29,17 @@ const googleTrends = require('google-trends-api');
 // query arguments
 var cat = 0; // category is "all"
 var queryArgs;
+var fameControlVar = "/m/03bnv"; //George Harrison, Guitarist
 if (searchStartDate == 0) {
   queryArgs = { keyword: [ searchQuery
-                         , "George Harrison"
+                         , fameControlVar
                          ]
               , category: cat
               }
 } else {
   var startDate = new Date(Date.now() - searchStartDate);
   queryArgs = { keyword: [ searchQuery
-                         , "George Harrison"
+                         , fameControlVar
                          ]
               , startTime: startDate
               , category: cat
