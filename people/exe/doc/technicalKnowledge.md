@@ -1,2 +1,2 @@
 full proffesional-level technical understanding of all 
-widely used and up-and-coming computer related skills in 2017
+widely used and up-and-coming computer systems in 2017
