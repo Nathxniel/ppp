@@ -1,9 +1,6 @@
 # Training strategy
 
 This is the "algorithm" that will be used to train the brain.
-It uses psychological [self improvement][si] concepts 
-for mental clarity, 
-as well reinforcement learning [philosophies][ee]
 
 conscious and unconscious parts of the brain play different parts in learning.
 we conjecture that[\*][cs]:
@@ -75,7 +72,6 @@ remember:
   - be [_positive_][cs]
   - listen
 
-[ee]: ../../programming/ML/DA-Lecture9.pdf "\"exploration and exploitation\""
 [si]: ../src/self_help
 [cs]: ./doc/strategyAxioms.md
 [nt]: ./doc/notes.md
