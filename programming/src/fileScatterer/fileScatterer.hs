@@ -2,6 +2,7 @@
 
 import System.Directory
 import Control.Applicative
+import System.IO
 
 welcome :: IO ()
 welcome = 
@@ -41,6 +42,7 @@ loopBody :: IO Bool
 loopBody = do
   wd <- getCurrentDirectory
   putStr (wd ++ "> ")
+  hFlush stdout
   input <- getLine
   case input of
     "quit" -> return False
