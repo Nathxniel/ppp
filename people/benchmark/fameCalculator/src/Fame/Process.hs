@@ -53,7 +53,6 @@ mainProcess v t is = do
   -- convert input into "/m/" code using "getInput.js"
   queryOut <- getQuery input
   let query = processQueryOutput queryOut input
-  putStrLn query -- debug (todo: remove)
   --change below to {getRequest query "0"}
   requestOut <- getRequest query t
   let [x, gh] = processRequestOutput requestOut

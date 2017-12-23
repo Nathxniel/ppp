@@ -17,8 +17,9 @@ getRequest q t = do
                           (proc "node" ["getData.js"
                                        ,t
                                        ,q
-                                       ]) { cwd = Nothing
-                                          , std_out = CreatePipe }
+                                       ]
+                          ) { cwd     = Nothing
+                            , std_out = CreatePipe }
   out <- hGetContents hout
   return out
 
@@ -27,7 +28,8 @@ getQuery s = do
   (_, Just hout, _, _) <- createProcess $
                           (proc "node" ["getInput.js"
                                        ,s
-                                       ]) { cwd = Nothing
-                                          , std_out = CreatePipe }
+                                       ]
+                          ) { cwd     = Nothing
+                            , std_out = CreatePipe }
   out <- hGetContents hout
   return out
