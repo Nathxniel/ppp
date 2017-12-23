@@ -35,7 +35,7 @@ time spent alone should be used to:
     proffesional knowledge of [_all computer systems_][cp]
 
 ### strategise (development)
-i.e. update and/or update STRATEGY.
+i.e. update STRATEGY.
 try not to compare yourself to other people, 
 as this creates a subconscious ceiling to acheivements.[\*][dc]
 
