@@ -29,7 +29,7 @@ wpmDelay :: Float -> IO ()
 -- parametrised by input
 -- to get the correct sleep to match words per minute
 --
--- todo: how do you make the program wait
+-- todo: how do you make the program wait traditionally
 wpmDelay wpm = 
   (liftM (\x -> foldr (+) 0 [1..x]) bigNo) >>= doNothing
   where bigNo              = pure (d * 5000000)
@@ -43,7 +43,7 @@ clearWord = do
   cursorUpLine 6
 
 writeWord :: String -> IO ()
--- todo: format text
+-- text format
 writeWord w = do
   putStrLn "\n\n"
   printCentre w

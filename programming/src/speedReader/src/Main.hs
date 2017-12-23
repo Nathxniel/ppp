@@ -7,18 +7,20 @@ import SpeedReader.Utils
 import SpeedReader.File
 
 main :: IO ()
-  -- todo
-  --  takes in a text (and maybe pdf) file
-  --  finds all the words (words)
-  --  speedReads that list
+  -- takes in a text or pdf file
+  -- finds all the words
+  -- shows the words on screen at given speed
 main = do
   args <- getArgs
   case args of
-    [wpm, file] -> speedRead (read' wpm) (processFile file) 
+    "-h":_      -> usage
+    [wpm, file] -> do
+                     ws <- processFile file
+                     speedRead (read' wpm) ws 
     [wpm]       -> catInput >>= speedRead (read' wpm)
     _           -> usage
     where read'    = read :: String -> Float
-          catInput = processInput <$> hGetContents stdin
+          catInput = words <$> hGetContents stdin
 
 usage :: IO ()
 usage =
@@ -29,4 +31,5 @@ usage =
   ,""
   ,"  file can be pdf or text"
   ,"  \"wpm\" is \"words per minute\""
+  ,"  $ speedRead -h shows this usage"
   ]
