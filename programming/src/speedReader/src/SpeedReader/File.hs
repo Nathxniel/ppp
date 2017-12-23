@@ -26,13 +26,31 @@ processFile fp =
   case getFileType fp of
     PDF -> do
              (_, Just hout, _, _) <- createProcess $
-               (proc "pdftotext" [fp
-                                 ,"-nopgbrk"
-                                 ,"-"
+               (proc "pdftotext" ["-nopgbrk"
                                  ,"-q"
+                                 ,fp
+                                 ,"-"
                                  ]
                ) { cwd     = Nothing
                  , std_out = CreatePipe }
              out <- hGetContents hout
              return (words out)
     TXT -> words <$> readFile fp
+
+-- allows user to specify first and last page of a pdf
+processPDF :: FilePath -> String -> String -> IO [String]
+processPDF fp f l = do
+  (_, Just hout, _, _) <- createProcess $
+    (proc "pdftotext" ["-f"
+                      ,f
+                      ,"-l"
+                      ,l
+                      ,"-nopgbrk"
+                      ,"-q"
+                      ,fp
+                      ,"-"
+                      ]
+    ) { cwd     = Nothing
+      , std_out = CreatePipe }
+  out <- hGetContents hout
+  return (words out)
