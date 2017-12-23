@@ -1,0 +1,2 @@
+## dependancies
+- "pdftotext" program
