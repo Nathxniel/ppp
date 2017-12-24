@@ -68,7 +68,6 @@ usage =
   ]
 
 showUsage :: Verbosity -> IO ()
--- todo: add more verbosity options
 showUsage 0 = usage
 showUsage 1 = do
   putStrLn "fame calculator: calculates fame category of given name"
