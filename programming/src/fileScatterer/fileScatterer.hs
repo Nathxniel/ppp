@@ -1,5 +1,3 @@
--- todo: haddock
-
 import System.Directory
 import Control.Applicative
 import System.IO
