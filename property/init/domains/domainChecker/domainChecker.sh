@@ -5,7 +5,7 @@ usage() {
   echo "  $ domainChecker [basename]+"
 }
 
-if [ "$#" == "0" ]; then
+if [ $# -eq 0 ]; then
   usage
   exit 1
 fi
