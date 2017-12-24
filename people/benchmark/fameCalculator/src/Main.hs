@@ -19,4 +19,5 @@ main = do
     "-vv" :is   -> processVerbose 3 is
     "-vvv":is   -> processVerbose 4 is
     ('-':_):_   -> showUsage 0
+    []          -> showUsage 0
     is          -> processStandard is
