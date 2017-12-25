@@ -1,0 +1,125 @@
+#!/bin/bash
+
+# usage
+#- VAR
+usage() {
+  echo "usage: "
+  echo " $ XXX [edit|view|ls] (AAA|BBB|CCC)"
+}
+
+# most recently viewed file in directory
+# (ignores cabal dist/ directories)
+mrview() {
+  mr=$(find . -type f \
+              -not -path '*/dist/*' \
+              -printf "%A+ %h/%f\n" \
+    | sort -nr \
+    | head -n 1)
+  echo $mr
+}
+
+# most recently edited file in directory
+# (ignores cabal dist/ directories)
+mredit() {
+  mr=$(find . -type f \
+              -not -path '*/dist/*' \
+              -printf "%T+ %h/%f\n" \
+    | sort -nr \
+    | head -n 1)
+  echo $mr
+}
+
+# show files structure using tree
+# (ignores cabal dist/ files and node modules
+lsinfo() {
+  tree -a -c -I 'dist|node_modules'
+}
+
+# view file from mr output
+# (N.B. mr output is space separated)
+viewmr() {
+  shift # remove useless time data
+  if [ -z "$1" ]; then
+    echo empty directory
+    exit 0
+  fi
+
+  echo $1 # show filename
+
+  # switch on extension
+  case "${1##*.}" in
+    pdf)
+      evince $1
+      ;;
+    *)
+      cat $1
+      git diff $1 # changes
+      ;;
+  esac
+}
+
+# edit file from mr output
+# (N.B. mr output is space separated)
+editmr() {
+  shift # remove useless time data
+  if [ -z "$1" ]; then
+    echo empty directory
+    exit 0  
+  fi
+
+  echo $1
+  
+  # switch on extension
+  case "${1##*.}" in
+    pdf)
+      echo "cannot edit PDF file.."
+      ;;
+    *)
+      vim $1
+      git diff $1 # changes
+      ;;
+  esac
+}
+
+# if nargs = 0 then VIEW most recent file
+if [ $# -eq 0 ]; then
+  echo "script is happening"
+  usage
+  exit 1
+fi
+
+# move to correct directory
+#- VAR
+cd ~/ppp/XXX
+if ! [ -z "$2" ]; then
+  if [ "$2" == "AAA" ] || 
+     [ "$2" == "BBB" ] || 
+     [ "$2" == "CCC" ]; then
+     cd $2;
+  else
+     usage
+     exit 1;
+  fi
+fi
+
+# if nargs > 0 then check to see EDIT | VIEW | LS
+case "$1" in
+  edit)
+    mr=$(mredit)
+    editmr $mr
+    exit 0
+    ;;
+  view)
+    mr=$(mrview)
+    viewmr $mr
+    exit 0
+    ;;
+  ls)
+    lsinfo
+    exit 0
+    ;;
+  *)
+    usage
+    exit 1
+    ;;
+esac
