@@ -7,29 +7,6 @@ type TimeInWeeks = String
 -- type Help = Bool
 type Input = [String]
 
--- this is the way to do it..
--- figure out the arguments to pass to mainProcess
--- and create a function to pass them to mainProcess
-{-
-processInput :: Input -> IO ()
-processInput i =
-  case findArguments i of
-    (_, 0, True, o) = showUsage
-    (_, t, True, o) = showUsage (for time)
-    (v, t, h, o)    = mainProcess v t o
-
-findArguments :: Input -> (Verbosity, TimeInWeeks, Help, Input)
-findArguments (('\"':i):is) = (1, "0", False, i:is)
-findArguments ("-h"  :is  ) = (v,   t, True,  o)
-  where (v, t, _, o) = findArguments (i:is)
-findArguments ("-q"  :is  ) 
-findArguments ("-v"  :is  ) 
-findArguments ("-vv" :is  ) 
-findArguments ("-vvv":is  ) 
-findArguments (('-':_):is ) = (0,   t, True, i:is)
-findArguments (is         ) 
--}  
-
 -- but for now we have this
 processStandard :: Input -> IO ()
 processStandard i = mainProcess 1 "0" i
@@ -53,7 +30,6 @@ mainProcess v t is = do
   -- convert input into "/m/" code using "getInput.js"
   queryOut <- getQuery input
   let query = processQueryOutput queryOut input
-  --change below to {getRequest query "0"}
   requestOut <- getRequest query t
   let [x, gh] = processRequestOutput requestOut
   showFame v x gh
@@ -77,5 +53,5 @@ processRequestOutput out =
 
 sanitise :: String -> String
 -- helper function for input processing functions  
--- also sanitises user input (todo)
-sanitise = filter (flip notElem "\"|(){}")
+-- also sanitises user input
+sanitise = filter (flip notElem "\"|(){}=\\/$%#*&?<>`~")
