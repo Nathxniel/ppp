@@ -6,7 +6,6 @@ import Data.Strings (strPadBoth)
 import System.Console.ANSI
 import System.IO
 
-import Control.Concurrent (threadDelay)
 import Control.Monad
 
 import qualified System.Console.Terminal.Size as Terminal
