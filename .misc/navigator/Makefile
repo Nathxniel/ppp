@@ -18,9 +18,15 @@ build:
 	sed -i 's/AAA/doc/g' programming
 	sed -i 's/BBB/src/g' programming
 	sed -i 's/CCC//g' programming
+	cp template ppp
+	sed -i 's/XXX/ppp/g' ppp
+	sed -i 's/AAA/people/g' ppp
+	sed -i 's/BBB/programming/g' ppp
+	sed -i 's/CCC/property/g' ppp
+	sed -i 's/cd ~/# cd ~/g' ppp
 	
 install: build
-	cp -t /bin/ programming people property
+	cp -t /bin/ programming people property ppp
 
 clean:
-	rm -f people programming property
+	rm -f people programming property ppp
