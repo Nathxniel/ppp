@@ -57,7 +57,7 @@ goBack d = do
 -- mkdir <path> && cd <path>
 createAndMoveTo :: Depth -> FilePath -> IO Depth
 createAndMoveTo d file = do
-  when (d <= 0) $ putStrLn "WARNING: leaving parent dir"
+  when (d < 0) $ putStrLn "WARNING: leaving parent dir"
   createDirectoryIfMissing False file
   putStrLn ("created/moved to " ++ file)
   setCurrentDirectory file
