@@ -19,7 +19,7 @@ processVerbose :: Verbosity -> Input -> IO ()
 processVerbose v i = mainProcess v "0" "0" i
 
 processTimed :: Years -> Years -> Input -> IO ()
-processTimed ts te i = mainProcess 1 ts' te' i
+processTimed ts te i = mainProcess 2 ts' te' i
   where years = (*) 31556952000 -- milliseconds in a year
         ts' = show $ years ((read :: Years -> Int) ts)
         te' = show $ years ((read :: Years -> Int) te)
