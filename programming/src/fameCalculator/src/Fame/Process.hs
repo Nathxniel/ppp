@@ -3,11 +3,12 @@ module Fame.Process where
 import Fame.NetProcess
 import Fame.Show
 
-type TimeInWeeks = String
+type Years = String
 -- type Help = Bool
 type Input = [String]
 
--- but for now we have this
+-- theres probably a better way to do this
+-- (abstraction)
 processStandard :: Input -> IO ()
 processStandard i = mainProcess 1 "0" i
 
@@ -17,12 +18,12 @@ processQuiet i = mainProcess 0 "0" i
 processVerbose :: Verbosity -> Input -> IO ()
 processVerbose v i = mainProcess v "0" i
 
-processTimed :: TimeInWeeks -> Input -> IO ()
+processTimed :: Years -> Input -> IO ()
 processTimed t i = mainProcess 1 t i
 
 -- input processing function
 mainProcess :: Verbosity   ->
-               TimeInWeeks ->
+               Years ->
                Input       ->
                IO ()
 mainProcess v t is = do
