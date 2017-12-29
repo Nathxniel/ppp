@@ -6,6 +6,17 @@
  * 
  */
 
+/*
+ * args
+ *
+ * 0 - bin location
+ * 1 - program location
+ *
+ * 2 - beginning of query name (e.g. "Taylor)
+ * ... rest of query name (e.g. Swift")
+ *
+ */
+
 var queryIndex = 2;
 
 // check program arguments
