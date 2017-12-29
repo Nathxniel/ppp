@@ -10,37 +10,42 @@ type Input = [String]
 -- theres probably a better way to do this
 -- (abstraction)
 processStandard :: Input -> IO ()
-processStandard i = mainProcess 1 "0" i
+processStandard i = mainProcess 1 "0" "0" i
 
 processQuiet :: Input -> IO ()
-processQuiet i = mainProcess 0 "0" i
+processQuiet i = mainProcess 0 "0" "0" i
 
 processVerbose :: Verbosity -> Input -> IO ()
-processVerbose v i = mainProcess v "0" i
+processVerbose v i = mainProcess v "0" "0" i
 
-processTimed :: Years -> Input -> IO ()
-processTimed t i = mainProcess 1 t i
+processTimed :: Years -> Years -> Input -> IO ()
+processTimed ts te i = mainProcess 1 ts' te' i
+  where years = (*) 31556952000 -- milliseconds in a year
+        ts' = show $ years ((read :: Years -> Int) ts)
+        te' = show $ years ((read :: Years -> Int) te)
 
 -- input processing function
 mainProcess :: Verbosity   ->
-               Years ->
+               Years       ->
+               Years       ->
                Input       ->
                IO ()
-mainProcess v t is = do
+mainProcess v ts te is = do
   let input = sanitise (unwords is)
-  -- convert input into "/m/" code using "getInput.js"
   queryOut <- getQuery input
   let query = processQueryOutput queryOut input
-  requestOut <- getRequest query t
+  requestOut <- getRequest query ts te
   let [x, gh] = processRequestOutput requestOut
   showFame v x gh
 
+-- convert to IO to display category
 processQueryOutput :: String -> String -> String
-processQueryOutput out def =
+-- default is used in case m-code cannot be found
+processQueryOutput out deflt =
   case out of
     '\"': '/' : 'm' : '/' : rest -> ("/m/" ++ process rest)
-    (s:ss) -> processQueryOutput ss def
-    []     -> def
+    (s:ss) -> processQueryOutput ss deflt
+    []     -> deflt
   where process = takeWhile (/='\"')
 
 processRequestOutput :: String -> [Int]

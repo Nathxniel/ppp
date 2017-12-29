@@ -60,7 +60,8 @@ usage =
   ,"  options:"
   ,"  -q quiet, just display fame rating"
   ,"  -v show fame number"
-  --  -t [n] where n is a number sets timespan to n-weeks in the past
+  ,"  -t n where n is a number sets timespan to n-years in the past"
+  ,"  -tt ns ne where ns is start date and ne is end date by years in the past"
   ,"  -vv show fame category explanation"
   ,"  -vvv show how it works"
   ,"  -h shows usage and program information"

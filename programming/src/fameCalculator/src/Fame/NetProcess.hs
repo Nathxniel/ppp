@@ -12,12 +12,13 @@ type Query = String
 type Time  = String
 type Request = String
 
-getRequest :: Query -> Time -> IO (Request)
-getRequest q t = do
+getRequest :: Query -> Time -> Time -> IO (Request)
+getRequest q ts te = do
   home <- getUserDocumentsDirectory
   (_, Just hout, _, _) <- createProcess $
                           (proc "node" ["getData.js"
-                                       ,t
+                                       ,ts
+                                       ,te
                                        ,q
                                        ]
                           ) { cwd     = Just (home ++ "/.fame/")
