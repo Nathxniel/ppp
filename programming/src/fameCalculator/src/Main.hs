@@ -19,7 +19,6 @@ main = do
     "-vvv":is       -> processVerbose 4 is
     "-t"  :ts:is    -> processTimed ts "0" is
     "-tt" :ts:te:is -> processTimed ts te is
---  "-ttt":is       ->
     ('-':_):_       -> showUsage 0
     []              -> showUsage 0
     is              -> processStandard is

@@ -1,4 +1,4 @@
-module Fame.Show (showFame, showUsage, Verbosity) where
+module Fame.Show (showFame, showUsage, showTimeInfo, Verbosity) where
 
 import Control.Monad (when)
 
@@ -42,6 +42,20 @@ showCategories =
   ,"G  list = -55 dBHa < x < -45 dBHa"
   ,"H  list =            x < -55 dBHa"
   ]
+
+showTimeInfo :: String -> String -> IO ()
+showTimeInfo ts te
+  | defaultTime = putStrLn "from one year ago"
+  | te == "0"   = putStrLn . unwords $ ["from", years ts, "years ago till now"]
+  | otherwise   = putStrLn . unwords $ ["from"
+                                       , years ts
+                                       , "years ago till"
+                                       , years te
+                                       , "years ago"
+                                       ]
+    where years x     = show $ (read' x) `div` 31556952000
+          read' x     = (read :: String -> Int) x
+          defaultTime = (ts == "0") && (te == "0")
 
 showInfo :: IO ()
 -- displays additional program information

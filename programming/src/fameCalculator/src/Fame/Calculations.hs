@@ -2,6 +2,9 @@ module Fame.Calculations (fame, getCategory) where
 
 -- calculation functions for fame calculator
 --
+-- fame :: RelativeFameInput 
+--      -> RelativeFameControl 
+--      -> dBHa
 fame :: Int -> Int -> Double
 -- calculates fame dBHA
 fame i gh =
