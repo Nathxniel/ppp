@@ -10,3 +10,11 @@ conjecture: CB stores "short term memory"
   - alprazolam appears to **completely** suppress the CB. although this
     is useful to allow UB to take control, CB seems to have such little
     functionality that it is essentially useless.
+
+### rituals and prayer appear to be effective in updating UB
+conjecture: the more "important" something is to the UB, the more likely
+it is going to be added to the UB
+  - religious prayer or general rituals/traditions are 
+    something very likely to be contextualised in the UB as important,
+    particularly the ones they were raised to pay attention to.
+  - these can be used to update the UB in the strategisation stage

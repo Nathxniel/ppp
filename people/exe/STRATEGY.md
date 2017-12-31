@@ -34,10 +34,17 @@ time spent alone should be used to:
   - have 
     proffesional knowledge of [_all computer systems_][cp]
 
+this can be done through ritual, prayer, or anything
+that is seen as significant[\*][nt].
+
 ### strategise (development)
 i.e. update STRATEGY.
-try not to compare yourself to other people, 
-as this creates a subconscious ceiling to acheivements.[\*][dc]
+Conjecture: the CB and UB work together to update UB;
+
+CB creates a postulation contextualised by the current state of the UB.
+Through this context, if the postulation is viewed sufficiently
+relevant and positively influencing towards goals the UB will change
+to accomodate it - by adding to or updating the state of the UB.
 
 ## when in social environments 
 Conjecture: when in social environments, the UB seems to be more effective/
@@ -63,10 +70,10 @@ try to steer all thoughts towards these:
   1. "how do i feel?"
   2. "what do i really want to do _RIGHT NOW_?"
 
-don't think about abstract concepts such as 
-  - "life" 
-  - "the nature of reality"
-  - _"people's opinions"_
+don't think about abstract questions that would require
+extensive CB activity; avoid questions similar to:
+  - _"what are these people thinking about?"_
+  - _"how could i help this person in their life?"_
 
 remember:
   - be [_positive_][cs]
@@ -74,7 +81,7 @@ remember:
 
 [si]: ../src/self_help
 [cs]: ./doc/strategyAxioms.md
-[nt]: ./doc/notes.md
+[nt]: ./etc/notes.md
 [nw]: ./doc/netWorth.md
 [al]: ./doc/quantitativePopularity.md
 [ap]: ./doc/positiveInteractions.md
