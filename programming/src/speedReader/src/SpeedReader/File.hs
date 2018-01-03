@@ -1,4 +1,4 @@
-module SpeedReader.File where
+module SpeedReader.File (processFile, processPDF) where
 
 import System.Process  ( StdStream(..)
                        , createProcess 

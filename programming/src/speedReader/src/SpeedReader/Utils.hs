@@ -4,23 +4,11 @@ import Data.Maybe (maybe)
 import Data.Strings (strPadBoth)
 
 import System.Console.ANSI
+import qualified System.Console.Terminal.Size as Terminal
 import System.IO
 
 import Control.Monad
 
-import qualified System.Console.Terminal.Size as Terminal
-
-
-speedRead :: Float -> [String] -> IO ()
--- takes wpm and list of strings as arguments
-speedRead _ []     = return ()
-speedRead _ [w]    = writeWord w
-speedRead wpm (w:ws) = do
-  writeWord w
-  clearWord
-  hFlush stdout
-  wpmDelay wpm
-  speedRead wpm ws 
 
 wpmDelay :: Float -> IO ()
 -- "words per minute delay"
@@ -40,6 +28,7 @@ wpmDelay wpm =
 clearWord :: IO ()
 clearWord = do
   cursorUpLine 6
+  hFlush stdout
 
 writeWord :: String -> IO ()
 -- text format
@@ -57,4 +46,3 @@ printCentre w = do
   putStrLn (strPadBoth ' ' width w)
   where
     getWidth = Terminal.width . (maybe (error "Terminal error") id)
-    
