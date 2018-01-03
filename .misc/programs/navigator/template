@@ -83,7 +83,6 @@ editmr() {
 
 # if nargs = 0 then VIEW most recent file
 if [ $# -eq 0 ]; then
-  echo "script is happening"
   usage
   exit 1
 fi
