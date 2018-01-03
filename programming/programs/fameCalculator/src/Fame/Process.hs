@@ -36,12 +36,20 @@ mainProcess v ts te is = do
   let input = sanitise (unwords is)
   queryOut <- getQuery input
   let query = processQueryOutput queryOut input
+  putStrLn $ getTypeQueryOutput queryOut -- show celeb type
   requestOut <- getRequest query ts te
   let [x, gh] = processRequestOutput requestOut
   showFame v x gh
   when (ts/="0") $ showTimeInfo ts te
 
--- convert to IO to display category
+getTypeQueryOutput :: String -> String
+getTypeQueryOutput out =
+  case out of
+    '\"':'t':'y':'p':'e':'\"':':':'\"':rest -> process rest
+    (s:ss) -> getTypeQueryOutput ss
+    []     -> "Celeb Type Unknown"
+    where process = takeWhile (/='\"')
+    
 processQueryOutput :: String -> String -> String
 -- default is used in case m-code cannot be found
 processQueryOutput out deflt =
@@ -49,7 +57,7 @@ processQueryOutput out deflt =
     '\"': '/' : 'm' : '/' : rest -> ("/m/" ++ process rest)
     (s:ss) -> processQueryOutput ss deflt
     []     -> deflt
-  where process = takeWhile (/='\"')
+    where process = takeWhile (/='\"')
 
 processRequestOutput :: String -> [Int]
 processRequestOutput out =
