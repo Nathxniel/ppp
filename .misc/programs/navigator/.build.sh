@@ -20,7 +20,7 @@ sed -i 's/CCC/src/g' property
 cp template programming
 sed -i 's/XXX/programming/g' programming
 sed -i 's/AAA/doc/g' programming
-sed -i 's/BBB/src/g' programming
+sed -i 's/BBB/programs/g' programming
 sed -i 's/CCC//g' programming
 
 # create "ppp" script from template
