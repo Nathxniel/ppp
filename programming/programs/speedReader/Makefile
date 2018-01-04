@@ -1,4 +1,4 @@
-.PHONY: all init build
+.PHONY: all init build clean
 
 all: build
 
@@ -7,3 +7,6 @@ init:
 
 build:
 	cabal install
+
+clean:
+	cabal clean
