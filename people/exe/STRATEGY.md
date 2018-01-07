@@ -1,92 +1,66 @@
 # Training strategy
 
-This is the "algorithm" that will be used to train the brain.
+this is the "algorithm" that will be used to train the brain
 
-conscious and unconscious parts of the brain play different parts in learning.
-we conjecture that[\*][cs]:
-  - `(1) unconscious brain (UB) and conscious brain (CB) both have decision making capabilities`
-  - `(2) UB is larger than the CB`
-  - `(3) UB and CB can both be influenced`
-  - `(4) CB can influence UB`
-  - `(5) UB stores concepts of "skills" and "priorities"`
+the mind seems to operate in a way that can be described 
+"conscious" and "unconscious" (or "subconcious")
 
-## when alone
+the "conscious brain" (CB) and "unconscious brain" (UB) 
+perhaps play different roles in learning
 
-we would like:
-  - CB to only positively influence UB towards goals
-  - CB to be used to reflect on recent interactions[\*][nt]
+therefore to reason about the functionality of the brain, 
+first of all we conjecture that[\*][cs]:
+  - `(1) UB and CB can both be influenced`
+  - `(2) UB and CB can both influence each other`
 
-we would not want:
-  - CB to "distract" UB from goals
+based on these conjectures and the sources in [src][./src], 
+we create conjectures and operate under the principles they outline as 
+to test their validity and effectiveness
 
-therefore, CB is used to help the UB 
-to develop and reinforce strategy _as best as possible_.
-time spent alone should be used to:
+## A) - memories, opinions, personality
+`(3) the CB and UB work together to update UB;` 
+`(4) the UB stores memories, opinions and personality;`
 
-### recite ambition (re-inforcement)
-`i want to...`
+thoughts that sprout from the CB are based on some combination of
+experiences, memories, opinions and (current) personality,
+which we will define as the _state_ of the mind, and we conjecture
+that the state of the mind is stored in the UB
+
+the emotional responses to these thoughts are what 
+provoke change in the state of the UB
+
+## B) - when in social environments 
+`(5) UB is larger than CB in some abstract notion of capacity;`
+
+social environments have too much information for 
+the smaller CB to manage, so UB is most effective
+
+therefore, we would like UB to have more control in social
+environments[\*][nt]
+
+## C) - thinking
+`(6) "thinking" is done in CB;`
+
+we would like CB to only positively influence UB towards goals,
+therefore thinking should be used to help the UB 
+to develop and reinforce strategy _as best as possible_
+
+e.g., "i want to..."
   - have
     a [_net worth_][nw] of £56 million 
   - be recognised by 
     [_everyone_][al]
-  - have 
-    [_all-positive_][ap] social interactions
+  - be liked by everyone
+    ([_all-positive social interactions_][ap])
   - have 
     proffesional knowledge of [_all computer systems_][cp]
 
-this can be done through ritual, prayer, or anything
-that is seen as significant[\*][nt].
+this can be done in many ways [\*][nt]
 
-### strategise (development)
-i.e. update STRATEGY.
-Conjecture: the CB and UB work together to update UB;
-
-CB creates a postulation contextualised by the current state of the UB.
-Through this context, if the postulation is viewed sufficiently
-relevant and positively influencing towards goals the UB will change
-to accomodate it - by adding to or updating the state of the UB.
-
-## when in social environments 
-Conjecture: when in social environments, the UB seems to be more effective/
-useful than CB.
-social environments have too much information for 
-the smaller CB[\*][c4] to manage, so UB is most effective
-
-therefore, we would like UB to have more control in social
-environments and for CB to only be used to guide UB. similarly
-to [when alone][wa]:
-
-we would like:
-  - CB to only positively influence UB towards goals
-  - CB to be used when required (e.g. to [_empathise_][ei], or to have conversation)
-
-we would not want:
-  - CB to "distract" UB from goals
-
-UB is needed to exploit/explore as to train and utelise skills where appropriate.
-
-### minimize thought (focus)
-try to steer all thoughts towards these:
-  1. "how do i feel?"
-  2. "what do i really want to do _RIGHT NOW_?"
-
-don't think about abstract questions that would require
-extensive CB activity; avoid questions similar to:
-  - _"what are these people thinking about?"_
-  - _"how could i help this person in their life?"_
-
-remember:
-  - be [_positive_][cs]
-  - listen
-
-[si]: ../src/self_help
-[cs]: ./doc/strategyAxioms.md
 [nt]: ./etc/notes.md
+
+[cs]: ./doc/strategyAxioms.md
 [nw]: ./doc/netWorth.md
 [al]: ./doc/quantitativePopularity.md
 [ap]: ./doc/positiveInteractions.md
 [cp]: ./doc/technicalKnowledge.md
-[c4]: ./STRATEGY.md "conjecture 4"
-[ei]: ../src/emotional_intelligence/danielGoleman.pdf "ref. on page 39"
-[wa]: ./STRATEGY.md "(above)"
-[dc]: ../src/self_help/perfectionism.pdf "ref. on page 81"
