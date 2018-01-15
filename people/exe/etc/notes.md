@@ -20,3 +20,8 @@ it is going to be added to the UB
     something very likely to be contextualised in the UB as important,
     particularly the ones they were raised to pay attention to.
   - these can be used to update the UB in the strategisation stage
+
+### psychoactive drugs do what you think they do
+conjecture: pre-perception of what experience will be had once on
+psychoactive drugs actually colours experience
+  - cannabinoids and salvia are psychoactive
