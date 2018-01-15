@@ -10,6 +10,8 @@ conjecture: CB stores "short term memory"
   - alprazolam appears to **completely** suppress the CB. although this
     is useful to allow UB to take control, CB seems to have such little
     functionality that it is essentially useless.
+  - salvia divinorum appears to have such a profoundly unique
+    effect on the body that it inevitably leads CB activity
 
 ### rituals and prayer appear to be effective in updating UB
 conjecture: the more "important" something is to the UB, the more likely
