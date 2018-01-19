@@ -12,11 +12,11 @@ data FileType = PDF | TXT
 getFileType :: FilePath -> FileType
 getFileType fp =
   case extension of
-    ['.','p','d','f'] -> PDF
-    ['.','t','x','t'] -> TXT
-    _                 -> error "file type not recognised"
-    where (filename, extension) = break (=='.') fp
-    -- TODO: get filename and extension properly..
+    ['p','d','f'] -> PDF
+    ['t','x','t'] -> TXT
+    x                 -> error $ "file type " ++ x ++ " not recognised"
+    where (e, f) = break (=='.') $ reverse fp
+          (filename, extension) = (reverse f, reverse e)
 
 processFile :: FilePath -> IO [String]
 -- takes filename and converts to [String]
