@@ -16,6 +16,7 @@ getFileType fp =
     ['.','t','x','t'] -> TXT
     _                 -> error "file type not recognised"
     where (filename, extension) = break (=='.') fp
+    -- TODO: get filename and extension properly..
 
 processFile :: FilePath -> IO [String]
 -- takes filename and converts to [String]
