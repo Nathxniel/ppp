@@ -17,7 +17,8 @@ bookmarkRead :: Bookmark -> BookmarkName -> -- bookmark data and name
                 Float    -> [String]     -> IO ()
 -- similar to speedRead but writes save data to "bookmark files"
 bookmarkRead n f wpm ws = bmr n f wpm (skip 0 ws) 
-  where skip pos (x:xs)
+  where skip _ []     = []
+        skip pos (x:xs)
           | pos >= n  = (x:xs)
           | otherwise = skip (pos+1) xs
 

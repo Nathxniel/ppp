@@ -29,7 +29,9 @@ getBookmarkFile f = do
 createBookmarkFile :: FilePath -> IO ()
 createBookmarkFile f = do
   exists <- doesFileExist f
-  when (not exists) $ writeFile f "" -- create empty file
+  when (not exists) $ do 
+    filename <- getBookmarkFile f
+    writeFile filename "0" -- create initilised bookmark file
 
 -- writes bookmark data to bookmark's file
 writeBookmark :: Bookmark -> BookmarkName -> IO ()

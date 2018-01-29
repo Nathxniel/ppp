@@ -25,7 +25,7 @@ main = do
                            exists <- hasBookmark file
                            n <- if exists
                                   then getBookmarkData file
-                                  else return 0 
+                                  else createBookmarkFile file >> return 0 
                            putStrLn . unwords $ ["starting from"
                                                 ,show . show $ n]
                            ws <- processFile file
