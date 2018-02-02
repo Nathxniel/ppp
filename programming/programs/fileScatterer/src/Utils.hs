@@ -28,7 +28,7 @@ help =
   ,"  :b/b    = go up directory"
   ,"  :l/ls   = show all directories"
   ,"  anything else creates dir of that name"
-  ,"  (to create a dir with name \"ls\" type :ls)"
+  ,"  (to create a dir with name, e.g., \"ls\" type :ls)"
   ]
 
 -- list directories as a tree
@@ -44,7 +44,7 @@ ls d = do
   where
     root = case d of
              0 -> "."
-             1 -> "."
+             1 -> ".."
              n -> if d < 0 then "."
                   else concat $ intersperse "/" $ replicate (n-1) ".."
 
@@ -52,6 +52,7 @@ goBack :: Depth -> IO Depth
 goBack d = do
   when (d <= 0) $ putStrLn "WARNING: leaving parent dir"
   setCurrentDirectory ".."
+  putStrLn ("depth is : " ++ show (d+1)) -- debug
   pure (d - 1)
 
 -- mkdir <path> && cd <path>
@@ -61,4 +62,5 @@ createAndMoveTo d file = do
   createDirectoryIfMissing False file
   putStrLn ("created/moved to " ++ file)
   setCurrentDirectory file
+  putStrLn ("depth is : " ++ show (d+1)) -- debug
   pure (d + 1)
