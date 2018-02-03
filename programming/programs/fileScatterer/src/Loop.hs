@@ -2,7 +2,7 @@ module Loop where
 
 import Utils
 
-import System.IO ( hFlush, stdout )
+import System.IO ( hFlush, stdout, writeFile )
 import System.Directory ( getCurrentDirectory )
 
 calcLoopState :: Bool -> Depth -> IO (Bool, Depth)
@@ -16,19 +16,29 @@ loopBody d = do
   hFlush stdout
   input <- getLine
   case input of
-    "quit"  -> return (False, d)
-    ":q"    -> return (False, d)
-    "help"  -> help >> return (True, d)
-    ":h"    -> help >> return (True, d)
-    "back"  -> goBack d >>= calcLoopState True
-    ":b"    -> goBack d >>= calcLoopState True
-    "ls"    -> ls d >> return (True, d)
-    ":l"    -> ls d >> return (True, d)
-    -- todo: add :t/touch to make empty files with names
-    ":quit" -> createAndMoveTo d "quit" >>= calcLoopState True
-    ":help" -> createAndMoveTo d "help" >>= calcLoopState True
-    ":back" -> createAndMoveTo d "b" >>= calcLoopState True
-    ":ls"   -> createAndMoveTo d "ls"  >>= calcLoopState True
-    []      -> help >> return (True, d)
-    _       -> createAndMoveTo d input >>= calcLoopState True
+    "quit"   -> procQuit
+    ":q"     -> procQuit
+    "help"   -> procHelp
+    ":h"     -> procHelp
+    "back"   -> procBack
+    ":b"     -> procBack
+    "ls"     -> procList
+    ":l"     -> procList
+    ":quit"  -> moveTo "quit"
+    ":help"  -> moveTo "help"
+    ":back"  -> moveTo "b"
+    ":ls"    -> moveTo "ls"
+    ":touch" -> moveTo "touch"
+    -- :t/touch to make empty files with name [filename]
+    't':'o':'u':'c':'h':' ':filename -> procTc filename
+    ':':'t':' ':            filename -> procTc filename
+    []       -> procHelp
+    _        -> moveTo input
+    where
+      procQuit = return (False, d)
+      procHelp = help                >> return (True, d)
+      procBack = goBack d            >>= calcLoopState True
+      procList = ls d                >>  return (True, d)
+      procTc h = writeFile h ":)"    >>  return (True, d)
+      moveTo x = createAndMoveTo d x >>= calcLoopState True
 
