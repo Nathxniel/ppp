@@ -1,0 +1,103 @@
+.title {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+
+.title h2 {
+  position: relative;
+  top: -2.5em;
+  font-size: 0.5em;
+  visibility: hidden;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title a:hover {
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  transition-timing-function: linear;
+  color: red;
+  text-decoration: none;
+}
+
+.title img {
+  position: relative;
+  top: -1.2em;
+}
+
+.title iframe {
+  position: relative;
+  top: -1.2em;
+  margin: 0;
+  padding: 0;
+  border-style: solid double dotted dashed;
+}
+
+.help {
+  text-align: left;
+  font-size: 0.8em;
+  color: black;
+  background-color: rgb(217,217,217);
+}
+
+.navbar+ {
+  text-align: center;
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.topics {
+  width: 50%;
+  bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topics a {
+  text-decoration: underline;
+}
+
+a {
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+
+  .title {
+    text-align: center;
+    font-size: 1em;
+    color: black;
+  }
+
+  .title h2 {
+    visibility: visible;
+    position: relative;
+    top: -2.5em;
+    font-size: 0.5em;
+    color: black;
+  }
+
+  body {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+  }
+
+  a:visited {
+    text-decoration: underline;
+  }
+
+}
