@@ -69,7 +69,7 @@ tribute summon
   - for monster levels 7 or higher, 2 monsters must be tributed
 
 flip summon
-  - changing a facedown defence monster into faceup attack without a card effect
+  - changing facedown defence monster into faceup attack without a card effect
   - you cant use monsters effects until they are faceup
 
 special summon
@@ -87,6 +87,7 @@ xyz summon
   - the xyz material cards must be faceup on your field side
   - stack the materials underneath the xyz card
   - summons are from extra deck
+  - when an xyz monster leaves the field all of its materials go graveyard
 
 synchro summon
   - you need a tuner monster
@@ -231,14 +232,15 @@ battle structure
     - each attack must be declared
 
   damage step
-    - if the target monster changes after declaration before attack, its a replay
+    - if the target monster changes before attack, its a replay
     - replay mean you redeclare a different attack
-    - if attacker changes, the previous attacker is still done attacking for turn
+    - if attacker changes, the previous attacker done attacking for the turn
     - only activate counter trap cards or effects on a monsters ATK or DEF
     - 1) if you attack an attack position, its ATK vs ATK
     - 2) if you attack a defence its ATK vs DEF
     - 1) LP = LP + (your ATK - their ATK); note you can take damage
     - 2) their LP cannot be lowered, yours can XD
+    - 0 ATK monsters cannot destroy anything by battle
 
   end step
     - declare end of battle phase
@@ -251,5 +253,78 @@ end phase
   - declare end of turn
   - discard cards in hand to graveyard until you have max 6
   - you can activate trap cards and quick-play spell cards
+<<<
 
+spell speed
+>>>
+spells and effects have different priorities
+when its a players turn it means they have priority of 2
+the opp has priorities of 1
+
+spell speed 1
+  - spells (normal equip continuous field ritual)
+  - effect monster effects (ignition trigger flip)
+
+spell speed 2
+  - traps (normal continuous)
+  - quick-play spells
+  - effect monster quick-effect
+
+spell speed 3
+  - counter trap
+
+chains
+  - you can immediately respond to an activation of a card or effect
+  - summoning tributing changing position and paying costs are not activations
+<<<
+
+cards
+>>>
+the number of copies of a card you can have depends on rarity
+  - you can have 3 copies of common cards
+  - you can have 2 copies of semi-limited cards
+  - you can have 1 copy of limited edition cards
+  - you cannot have any copies of forbidden cards
+
+tokens are dropped by some monsters effects
+they are not part of any deck and do not get sent to graveyard
+they can either be on field in a monster zone or not in play
+
+"leaving the field" means leaving the field anyhow except:
+  - becoming an xyz material
+  - getting *shuffled* into the main deck
+
+"cards on the field" means everything on the field except:
+  - graveyard 
+  - deck 
+  - extra deck
+
+if the opp has control over a card and it is 
+sent to graveyard or returned to deck/hand
+it goes to back to the *owner* in the respective place
+
+a card is "destroyed" only if it was battled to death
+discarding is sending to the graveyard
+
+equipped monsters are considered as equip spells
+once a monster is equipped to another it cannot move
+an "equip card" is a card with anything equipped
+destroying or flipping down a monster sends equip to graveyard
+<<<
+
+misc
+>>>
+"excavate" means reveal cards to both players
+
+"paying a cost" happens before card play regardless of effect success
+
+"peircing battle damage" is LP = LP - |ur ATK - opp DEF|
+
+"revealing" a card means showing to both players, flip effects dont proc
+
+after "searching your deck" for a card it must be shuffled as per prep
+
+when a banished card is moved to graveyard it is not considered "sent"
+
+you can tribute faceup or facedown cards
 <<<
