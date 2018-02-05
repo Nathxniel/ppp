@@ -131,10 +131,10 @@ function procGithub() {
   document.getElementById('videodrop').innerHTML
     = ' ';
 
-  document.getElementById('titlebar').innerHTML 
-    = '<a href=https://github.com/Nathxniel/ppp>ppp project on gitHub</a>;'; 
   document.getElementById('titlebar').style.cssText 
     = 'font-style: normal; color: white; text-decoration: none;';
+  document.getElementById('titlebar').innerHTML 
+    = '<a href=https://github.com/Nathxniel/ppp>ppp project on gitHub</a>'; 
   document.getElementById('leaveFor').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
@@ -150,15 +150,15 @@ function procFacebook() {
   document.getElementById('videodrop').innerHTML
     = ' ';
 
-  document.getElementById('titlebar').innerHTML
-    = '<a href=https://www.facebook.com/ICLML/>ICL ML</a>';
   document.getElementById('titlebar').style.cssText 
     = 'font-style: normal; color: white; text-decoration: strikethrough;';
+  document.getElementById('titlebar').innerHTML
+    = '<a href=https://www.facebook.com/ICLML/>ICL ML</a>';
   document.getElementById('leaveFor').innerHTML
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
 
 function randomML() {
-  var rand = Math.floor((Math.random() * 6) + 1);
+  var rand = Math.floor((Math.random() * 7) + 1);
   return 'media/ai' + rand + '.gif';
 }
