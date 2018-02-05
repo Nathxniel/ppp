@@ -132,16 +132,18 @@ function procGithub() {
     = ' ';
 
   document.getElementById('titlebar').innerHTML 
-    = '<a href=https://github.com/Nathxniel/ppp>ppp project on gitHub</a>'; 
+    = '<a href=https://github.com/Nathxniel/ppp>ppp project on gitHub</a>;'; 
   document.getElementById('titlebar').style.cssText 
-    = 'font-style: normal; color: black; text-decoration: none';
+    = 'font-style: normal; color: white; text-decoration: none;';
   document.getElementById('leaveFor').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
 
 function procFacebook() {
   growBox(505, 605, 20, 'px');
-  var DynamicBackground = 'background-color: rgb(59, 89, 152);' 
+  var DynamicBackground = 'background-color: rgb(59, 89, 152);';
+  DynamicBackground += 'background-image: url(' + randomML() + ');';
+  DynamicBackground += 'background-size: cover;';
   
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
@@ -151,7 +153,12 @@ function procFacebook() {
   document.getElementById('titlebar').innerHTML
     = '<a href=https://www.facebook.com/ICLML/>ICL ML</a>';
   document.getElementById('titlebar').style.cssText 
-    = 'font-style: normal; color: black; text-decoration: none';
+    = 'font-style: normal; color: white; text-decoration: strikethrough;';
   document.getElementById('leaveFor').innerHTML
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
+}
+
+function randomML() {
+  var rand = Math.floor((Math.random() * 6) + 1);
+  return 'media/ai' + rand + '.gif';
 }
