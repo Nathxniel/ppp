@@ -1,0 +1,26 @@
+#!/bin/bash 
+echo "stripping photos of metadata..."
+files=$(find website/ \
+        -type f \
+        -regextype posix-egrep \
+        -regex ".*\.(jpg|jpeg|png|gif|mp4)$" \
+        | xargs -L 1)
+
+for file in $files; do
+  echo removing metadata for $file;
+  exiftool -all= $file
+  2>/dev/null rm "$file"_original
+  if [ -z $? ]; then 
+    echo removing "$file"_original
+  fi
+done  
+
+echo "creating and exporting website.zip to $1..."
+zip -r website "$1"website
+sleep 1
+if [ "$1" == "" ]; then
+  echo "no target directory specified, exporting to \$HOME"
+  mv website.zip ~
+else
+  mv website.zip $1
+fi
