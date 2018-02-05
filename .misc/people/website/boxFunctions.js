@@ -48,9 +48,10 @@ function prepPort() {
 function procPortfolio() {
   prepPort();
   var DynamicBackground = 'background-image: url(pictures/trippy.jpg);';
-  DynamicBackground += 'background-repeat: repeat-x;'
+  DynamicBackground += 'background-repeat: repeat-x;';
+  DynamicBackground += 'background-color: rgb(100, 100, 100);';
   DynamicBackground += 'background-position: 0px 0px;';
-  DynamicBackground += 'animation: movement 40s linear infinite;'
+  DynamicBackground += 'animation: movement 40s linear infinite;';
   
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
@@ -84,7 +85,7 @@ function procTwitter() {
 }
 
 function procLinkedin() {
-  prepPage();
+  growBox(255, 361, 20, 'px');
   var DynamicBackground = "background-color: rgb(0, 123, 181);";
 
   document.getElementById('backdrop').style.cssText
@@ -102,8 +103,10 @@ function procLinkedin() {
 
 function procAbout() {
   growBox(400, 400, 20, 'px');
-  var DynamicBackground = 'background-image: url(pictures/teamRocket.png);' 
-  DynamicBackground += 'background-position: 0px 0px;'
+  var DynamicBackground = 'background-image: url(pictures/teamRocket.png);';
+  DynamicBackground += 'background-repeat: repeat-x;';
+  DynamicBackground += 'background-color: rgb(255,192,203);';
+  DynamicBackground += 'background-position: 0px 0px;';
   DynamicBackground += 'animation: movement 40s linear infinite;';
   
   document.getElementById('backdrop').style.cssText
