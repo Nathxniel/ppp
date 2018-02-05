@@ -3,29 +3,56 @@
   <title>nathaniel.com</title>
   <link rel="icon" href="pictures/premierball.png">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <script type="text/javascript" src="boxFunctions.js"></script>
   <a target="_parent"></a>
 </head>
 
-<body>
+<body id="backdrop">
   <div class="title">
     <a href="index.html">
-    <h1>NATHANIELoshunniyi.com</h1>
+    <h1 id="titlebar">NATHANIELoshunniyi.com</h1>
     </a>
     <h2>mobile version</h2>
 
-    <iframe height="400px" width="400px" src="default.html" name="leBox" sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation">
-    website is not rlly working..<br\>
-    go <a href="index2.html">here</a>for a simpler working site<br\>
-    go to <a href="https://freelancerclub.net/discover/freelancers/nathanieloshunniyi">freelancerclub</a> for modelling portfolio<br\>
-    </iframe>
+    <iframe
+      src="default.html"
+      onclick="growBox(400,600,20,'px')"
+      id="box"
+      name="leBox" 
+      sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation">
 
+      website is not rlly working..<br\>
+      go <a href="index2.html">here</a>for a simpler working site<br\>    
+    </iframe>
   </div>
 
   <div class="navbar">
-    <a href="https://twitter.com/n_oshunniyi">twitter</a> - 
-    <a href="https://www.linkedin.com/in/nathxniel/">linkedin</a> - 
-    <a href="about.html" target="leBox" style="font-style: italic;">about</a> - 
-    <a href="https://github.com/Nathxniel/ppp">github</a> - 
-    <a href="https://www.facebook.com/Nathxniel">facebook</a>
+  
+  <p id="leaveFor"></p>
+
+    <a href="site/portfolio.html"
+       target="leBox"
+       onclick="procPortfolio()">
+       portfolio</a> - 
+    <a href="site/twitter.html"
+       target="leBox"
+       onclick="procTwitter()">twitter</a> - 
+
+    <a href="site/linkedin.html"
+       target="leBox"
+       onclick="procLinkedin()">linkedin</a> - 
+
+    <a href="about.html"
+       target="leBox" 
+       onclick="procAbout()" 
+       style="font-style: italic;">about</a> - 
+
+    <a href="site/github.html"
+       target="leBox"
+       onclick="procGithub()">github</a> - 
+
+    <a href="site/facebook.html"
+       target="leBox"
+       onclick="procFacebook()">ICL ML facebook</a>
   </div>
 </body>

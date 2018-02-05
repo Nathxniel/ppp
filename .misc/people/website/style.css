@@ -6,6 +6,7 @@
 
 .title h2 {
   position: relative;
+  text-align: center;
   top: -2.5em;
   font-size: 0.5em;
   visibility: hidden;
@@ -30,6 +31,8 @@
 
 .title iframe {
   position: relative;
+  height: 400px;
+  width: 400px;
   top: -1.2em;
   margin: 0;
   padding: 0;
@@ -74,6 +77,18 @@ body {
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
+
+@-webkit-keyframes
+movement {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100% }
+}
+
+@keyframes movement {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100% }
+}
+
 
 @media screen and (max-width: 800px) {
 
