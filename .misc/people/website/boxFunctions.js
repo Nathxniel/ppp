@@ -35,11 +35,11 @@ function prepPage() {
 
 function prepPort() {
   if (window.matchMedia("(max-width: 800px)").matches) {
-    growBox(500, 900, 20, 'px');
+    growBox(504, 754, 20, 'px');
     // growBox(90, 90, 2, '%');
 
   } else {
-    growBox(900, 900, 30, 'px');
+    growBox(904, 1355, 30, 'px');
     // growBox(90, 90, 2, '%');
 
   }
@@ -47,33 +47,55 @@ function prepPort() {
 
 function procPortfolio() {
   prepPort();
-  var DynamicBackground = "background-color: black"
+  var DynamicBackground = 'background-image: url(pictures/trippy.jpg);';
+  DynamicBackground += 'background-repeat: repeat-x;'
+  DynamicBackground += 'background-position: 0px 0px;';
+  DynamicBackground += 'animation: movement 40s linear infinite;'
+  
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
-  document.getElementById('titlebar').style.color 
-    = 'white';
+  document.getElementById('videodrop').innerHTML
+    = ' ';
+
   document.getElementById('titlebar').innerHTML 
-    = '<a href=https://www.ammmanagement.com/modelsgallery/nathaniel-oshunniyi/>modelling portfolio</a>';
+    = '<a href=https://www.ammmanagement.com/modelsgallery/nathaniel-oshunniyi/>PORTFOLIO</a>';
+  document.getElementById('titlebar').style.cssText 
+    = 'font-style: italic; color: rgb(255, 255, 255); text-decoration: overline underline';
   document.getElementById('leaveFor').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
 
 function procTwitter() { 
   prepPage();
-  document.getElementById('backdrop').style.backgroundColor 
-		= 'cyan'; // wavey picture or something
-	document.getElementById('titlebar').innerHTML 
-		= '<a href=https://twitter.com/n_oshunniyi>twitter @n_oshunniyi</a>';
+  var DynamicBackground = "background-color: rgb(85, 172, 238);";
+
+  document.getElementById('backdrop').style.cssText
+		= DynamicBackground;
+  document.getElementById('videodrop').innerHTML
+    // = '<source src="media/darksoulsIIIssohpkc.mp4" type="video/mp4"></source>';
+    = ' ';
+
+  document.getElementById('titlebar').innerHTML 
+    = '<a href=https://twitter.com/n_oshunniyi>twitter @n_oshunniyi</a>';
+  document.getElementById('titlebar').style.cssText 
+    = 'font-style: normal; color: green; text-decoration: none';
   document.getElementById('leaveFor').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
 
 function procLinkedin() {
   prepPage();
-  document.getElementById('backdrop').style.backgroundColor 
-    = 'blue';
+  var DynamicBackground = "background-color: rgb(0, 123, 181);";
+
+  document.getElementById('backdrop').style.cssText
+    = DynamicBackground;
+  document.getElementById('videodrop').innerHTML
+    = ' ';
+
   document.getElementById('titlebar').innerHTML 
     = '<a href=https://www.linkedin.com/in/nathxniel/>connect on linkedin</a>'; 
+  document.getElementById('titlebar').style.cssText 
+    = 'font-style: normal; color: black; text-decoration: none';
   document.getElementById('leaveFor').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';   
 }
@@ -82,31 +104,51 @@ function procAbout() {
   growBox(400, 400, 20, 'px');
   var DynamicBackground = 'background-image: url(pictures/teamRocket.png);' 
   DynamicBackground += 'background-position: 0px 0px;'
-  DynamicBackground += 'animation: movement 20s linear infinite;';
+  DynamicBackground += 'animation: movement 40s linear infinite;';
+  
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
+  document.getElementById('videodrop').innerHTML
+    = ' ';
+
   document.getElementById('titlebar').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>back to home</a>';
+  document.getElementById('titlebar').style.cssText 
+    = 'font-style: normal; color: black; text-decoration: none';
   document.getElementById('leaveFor').innerHTML 
     = '<a href=site/map.html>site map</a>';  
 }
 
 function procGithub() {
-  prepPage();
-  document.getElementById('backdrop').style.backgroundColor 
-    = 'grey';
+  growBox(500, 400, 20, 'px');
+  var DynamicBackground = 'background-color: gray;';
+  
+  document.getElementById('backdrop').style.cssText 
+    = DynamicBackground;
+  document.getElementById('videodrop').innerHTML
+    = ' ';
+
   document.getElementById('titlebar').innerHTML 
     = '<a href=https://github.com/Nathxniel/ppp>ppp project on gitHub</a>'; 
+  document.getElementById('titlebar').style.cssText 
+    = 'font-style: normal; color: black; text-decoration: none';
   document.getElementById('leaveFor').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
 
 function procFacebook() {
   growBox(505, 605, 20, 'px');
-  document.getElementById('backdrop').style.backgroundColor
-    = 'dark blue';
+  var DynamicBackground = 'background-color: rgb(59, 89, 152);' 
+  
+  document.getElementById('backdrop').style.cssText
+    = DynamicBackground;
+  document.getElementById('videodrop').innerHTML
+    = ' ';
+
   document.getElementById('titlebar').innerHTML
-    = '<a href=https://www.facebook.com/ICLML/>ICL ML on FaceBook</a>';
+    = '<a href=https://www.facebook.com/ICLML/>ICL ML</a>';
+  document.getElementById('titlebar').style.cssText 
+    = 'font-style: normal; color: black; text-decoration: none';
   document.getElementById('leaveFor').innerHTML
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
