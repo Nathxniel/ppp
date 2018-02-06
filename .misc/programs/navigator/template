@@ -32,7 +32,7 @@ mredit() {
 # show files structure using tree
 # (ignores cabal dist/ files and node modules
 lsinfo() {
-  tree -a -c -I 'dist|node_modules'
+  tree -a -c -I 'dist|node_modules|.git'
 }
 
 # view file from mr output
