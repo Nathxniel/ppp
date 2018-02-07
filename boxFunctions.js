@@ -55,8 +55,8 @@ function procPortfolio() {
   
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
-  document.getElementById('videodrop').innerHTML
-    = ' ';
+  document.getElementById('videodrop').style.cssText
+    = 'visibility: hidden;';
 
   document.getElementById('titlebar').innerHTML 
     = '<a href=https://www.ammmanagement.com/modelsgallery/nathaniel-oshunniyi/>PORTFOLIO</a>';
@@ -66,20 +66,19 @@ function procPortfolio() {
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
 
-function procTwitter() { 
+function procTwitter() {
   prepPage();
   var DynamicBackground = "background-color: rgb(85, 172, 238);";
 
   document.getElementById('backdrop').style.cssText
 		= DynamicBackground;
   document.getElementById('videodrop').innerHTML
-    // = '<source src="media/darksoulsIIIssohpkc.mp4" type="video/mp4"></source>';
-    = ' ';
+    = '<source src="' + randomVid() + '" type="video/mp4"></source>';
 
   document.getElementById('titlebar').innerHTML 
     = '<a href=https://twitter.com/n_oshunniyi>twitter @n_oshunniyi</a>';
   document.getElementById('titlebar').style.cssText 
-    = 'font-style: normal; color: green; text-decoration: none';
+    = 'border: 1px white solid;display: inline;background: white;border-radius: 10px;opacity: 0.5;';
   document.getElementById('leaveFor').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
 }
@@ -90,8 +89,8 @@ function procLinkedin() {
 
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
-  document.getElementById('videodrop').innerHTML
-    = ' ';
+  document.getElementById('videodrop').style.cssText
+    = 'visibility: hidden;';
 
   document.getElementById('titlebar').innerHTML 
     = '<a href=https://www.linkedin.com/in/nathxniel/>connect on linkedin</a>'; 
@@ -104,15 +103,13 @@ function procLinkedin() {
 function procAbout() {
   growBox(400, 380, 20, 'px');
   var DynamicBackground = 'background-image: url(pictures/teamRocket.png);';
-  DynamicBackground += 'background-repeat: repeat-x;';
+  DynamicBackground += 'background-size: cover;';
   DynamicBackground += 'background-color: rgb(255,192,203);';
-  DynamicBackground += 'background-position: 0px 0px;';
-  // DynamicBackground += 'animation: movement 40s linear infinite;';
   
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
-  document.getElementById('videodrop').innerHTML
-    = ' ';
+  document.getElementById('videodrop').style.cssText
+    = 'visibility: hidden;';
 
   document.getElementById('titlebar').innerHTML 
     = '<a href=index.html onclick=growBox(400, 400, 20, "px")>back to home</a>';
@@ -128,8 +125,8 @@ function procGithub() {
   
   document.getElementById('backdrop').style.cssText 
     = DynamicBackground;
-  document.getElementById('videodrop').innerHTML
-    = ' ';
+  document.getElementById('videodrop').style.cssText
+    = 'visibility: hidden;';
 
   document.getElementById('titlebar').style.cssText 
     = 'font-style: normal; color: white; text-decoration: none;';
@@ -147,11 +144,11 @@ function procFacebook() {
   
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
-  document.getElementById('videodrop').innerHTML
-    = ' ';
+  document.getElementById('videodrop').style.cssText
+    = 'visibility: hidden;';
 
   document.getElementById('titlebar').style.cssText 
-    = 'font-style: normal; color: white; text-decoration: strikethrough;';
+    = 'border: 1px white solid;display: inline;background: white;border-radius: 10px;opacity: 0.5;';
   document.getElementById('titlebar').innerHTML
     = '<a href=https://www.facebook.com/ICLML/>ICL ML</a>';
   document.getElementById('leaveFor').innerHTML
@@ -161,4 +158,9 @@ function procFacebook() {
 function randomML() {
   var rand = Math.floor((Math.random() * 7) + 1);
   return 'media/ai' + rand + '.gif';
+}
+
+function randomVid() {
+  var rand = Math.floor((Math.random() * 5) + 1);
+  return 'media/vid' + rand + '.mp4';
 }
