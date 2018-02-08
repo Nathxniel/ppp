@@ -59,7 +59,7 @@ function procPortfolio() {
     = 'visibility: hidden;';
 
   document.getElementById('titlebar').innerHTML 
-    = '<a href=https://www.ammmanagement.com/modelsgallery/nathaniel-oshunniyi/>PORTFOLIO</a>';
+    = '<a href=https://www.ammmanagement.com/modelsgallery/nathaniel-oshunniyi/ target=_blank>PORTFOLIO</a>';
   document.getElementById('titlebar').style.cssText 
     = 'font-style: italic; color: rgb(255, 255, 255); text-decoration: overline underline';
   document.getElementById('leaveFor').innerHTML 
