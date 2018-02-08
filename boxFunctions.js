@@ -86,6 +86,8 @@ function procTwitter() {
 function procLinkedin() {
   growBox(255, 361, 20, 'px');
   var DynamicBackground = "background-color: rgb(0, 123, 181);";
+  DynamicBackground += "background-image: url(pictures/Network.jpg";
+  DynamicBackground += "background-size: cover;";
 
   document.getElementById('backdrop').style.cssText
     = DynamicBackground;
