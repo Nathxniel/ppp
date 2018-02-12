@@ -60,6 +60,12 @@ function prepPort() {
 }
 
 function procPortfolio() {
+  $(document).ready(function(){
+    /*! Fades in page on load */
+    $('body').css('display', 'none');
+    $('body').fadeIn(2000);
+  });
+
   NAME =  "<a href=https://www.ammmanagement.com/modelsgallery/";
   NAME += "nathaniel-oshunniyi/ target=_blank>PORTFOLIO</a>";
 
