@@ -1,20 +1,42 @@
+var NAME;
+var OUTLINK;
+var title;
+var background;
+var video;
+// box
+var navbar;
+
+// history.pushState(null, null, document.title);
+// window.addEventListener('popstate', function () {
+//     history.pushState(null, null, document.title);
+// });
+
+const defaultNavbar = "";
+const defaultOutlink = "<a href=index.html>home</a>";
+const noVideo = "visibility: hidden;";
+
+function isMobileDevice() {
+  return ((window.matchMedia("(max-width: 800px)").matches) ||
+    (/mobile/i.test(navigator.userAgent)) ||
+    ("ontouchstart" in window) ||
+    (window.DocumentTouch && document instanceof DocumentTouch) ||
+    ((hash["touch"] && hash["touch"].offsetTop) === 9)
+    );
+}
+
 function growBox(width, height, hspeed, unit) {
-  var box = document.getElementById('box');
-  
+  var box = document.getElementById("box");
   var w = 0;
   var h = 0;
   var wspeed = (width / height) * hspeed;
-
   var id = setInterval(frame, 10);
-
   function frame() {
     if (h >= height) {
       clearInterval(id);
-
     } else {
       h += hspeed;
       w += wspeed;
-      box.style.width = w + unit;
+      box.style.width  = w + unit;
       box.style.height = h + unit;
     }
     //end if
@@ -23,146 +45,147 @@ function growBox(width, height, hspeed, unit) {
 
 function prepPage() {
   if (window.matchMedia("(max-width: 800px)").matches) {
-    growBox(500, 400, 20, 'px');
-    // growBox(90, 90, 2, '%');
-
+    growBox(500, 1000, 20, "px");
   } else {
-    growBox(800, 600, 30, 'px');
-    // growBox(90, 90, 2, '%');
-
+    growBox(800, 600, 30, "px");
   }
 }
 
 function prepPort() {
   if (window.matchMedia("(max-width: 800px)").matches) {
-    growBox(504, 754, 20, 'px');
-    // growBox(90, 90, 2, '%');
-
+    growBox(504, 754, 20, "px");
   } else {
-    growBox(904, 1355, 30, 'px');
-    // growBox(90, 90, 2, '%');
-
+    growBox(904, 1355, 30, "px");
   }
 }
 
 function procPortfolio() {
-  prepPort();
-  var DynamicBackground = 'background-image: url(pictures/trippy.jpg);';
-  DynamicBackground += 'background-repeat: repeat-x;';
-  DynamicBackground += 'background-color: rgb(100, 100, 100);';
-  DynamicBackground += 'background-position: 0px 0px;';
-  DynamicBackground += 'animation: movement 40s linear infinite;';
-  
-  document.getElementById('backdrop').style.cssText
-    = DynamicBackground;
-  document.getElementById('videodrop').style.cssText
-    = 'visibility: hidden;';
+  NAME =  "<a href=https://www.ammmanagement.com/modelsgallery/";
+  NAME += "nathaniel-oshunniyi/ target=_blank>PORTFOLIO</a>";
 
-  document.getElementById('titlebar').innerHTML 
-    = '<a href=https://www.ammmanagement.com/modelsgallery/nathaniel-oshunniyi/ target=_blank>PORTFOLIO</a>';
-  document.getElementById('titlebar').style.cssText 
-    = 'font-style: italic; color: rgb(255, 255, 255); text-decoration: overline underline';
-  document.getElementById('leaveFor').innerHTML 
-    = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
+  OUTLINK = defaultOutlink;
+
+  title =  "font-style: italic; color: black;";
+  title += "text-decoration: overline underline";
+
+  background =  "background-image: url(pictures/trippy.jpg);";
+  background += "background-repeat: repeat-x;";
+  background += "background-color: gray;";
+  background += "background-position: 0px 0px;";
+  background += "animation: movement 40s linear infinite;";
+
+  video  = noVideo;
+  navbar = defaultNavbar;
+
+  prepPort();
+  editStyle(NAME, OUTLINK, title, background, video, navbar);
 }
 
 function procTwitter() {
+  NAME =  "<a href=https://twitter.com/n_oshunniyi>";
+  NAME += "twitter @n_oshunniyi</a>";
+
+  OUTLINK = defaultOutlink;
+
+  title =  "border: 1px white solid; display: inline;";
+  title += "background: white; border-radius: 10px; opacity: 0.5;";
+
+  background = "background-color: rgb(85, 172, 238);";
+
+  video =  "<source src'" + randomVid() + "' type='video/mp4'>";
+  video += "</source>";
+
+  navbar = defaultNavbar;
+
   prepPage();
-  var DynamicBackground = "background-color: rgb(85, 172, 238);";
-
-  document.getElementById('backdrop').style.cssText
-		= DynamicBackground;
-  document.getElementById('videodrop').innerHTML
-    = '<source src="' + randomVid() + '" type="video/mp4"></source>';
-
-  document.getElementById('titlebar').innerHTML 
-    = '<a href=https://twitter.com/n_oshunniyi>twitter @n_oshunniyi</a>';
-  document.getElementById('titlebar').style.cssText 
-    = 'border: 1px white solid;display: inline;background: white;border-radius: 10px;opacity: 0.5;';
-  document.getElementById('leaveFor').innerHTML 
-    = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
+  editStyle(NAME, OUTLINK, title, background, video, navbar);
 }
 
 function procLinkedin() {
-  growBox(255, 361, 20, 'px');
-  var DynamicBackground = "background-color: rgb(0, 123, 181);";
-  DynamicBackground += "background-image: url(pictures/Network.jpg);";
-  DynamicBackground += "background-size: cover;";
+  NAME =  "<a href=https://www.linkedin.com/in/nathxniel/>";
+  NAME += "connect on linkedin</a>"; 
 
-  document.getElementById('backdrop').style.cssText
-    = DynamicBackground;
-  document.getElementById('videodrop').style.cssText
-    = 'visibility: hidden;';
+  OUTLINK = defaultOutlink;
+  title = "font-style: normal; color: black; text-decoration: none";
 
-  document.getElementById('titlebar').innerHTML 
-    = '<a href=https://www.linkedin.com/in/nathxniel/>connect on linkedin</a>'; 
-  document.getElementById('titlebar').style.cssText 
-    = 'font-style: normal; color: black; text-decoration: none';
-  document.getElementById('leaveFor').innerHTML 
-    = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';   
+  background =  "background-color: rgb(0, 123, 181);";
+  background += "background-image: url(pictures/Network.jpg);";
+  background += "background-size: cover;";
+
+  video  = noVideo;
+  navbar = defaultNavbar;
+
+  growBox(255, 361, 20, "px");
+  editStyle(NAME, OUTLINK, title, background, video, navbar);
 }
 
 function procAbout() {
-  growBox(400, 380, 20, 'px');
-  var DynamicBackground = 'background-image: url(pictures/teamRocket.png);';
-  DynamicBackground += 'background-size: cover;';
-  DynamicBackground += 'background-color: rgb(255,192,203);';
-  
-  document.getElementById('backdrop').style.cssText
-    = DynamicBackground;
-  document.getElementById('videodrop').style.cssText
-    = 'visibility: hidden;';
+  NAME    = "<a href=index.html>back to home</a>";
+  OUTLINK = "<a href=site/map.html>site map</a>";
+  title = "font-style: normal; color: black; text-decoration: none";
 
-  document.getElementById('titlebar').innerHTML 
-    = '<a href=index.html onclick=growBox(400, 400, 20, "px")>back to home</a>';
-  document.getElementById('titlebar').style.cssText 
-    = 'font-style: normal; color: black; text-decoration: none';
-  document.getElementById('leaveFor').innerHTML 
-    = '<a href=site/map.html>site map</a>';  
+  background =  "background-image: url(pictures/teamRocket.png);";
+  background += "background-size: cover;";
+  background += "background-color: pink;";
+
+  video  = noVideo;
+  navbar = defaultNavbar;
+
+  growBox(400, 380, 20, "px");
+  editStyle(NAME, OUTLINK, title, background, video, navbar);
 }
 
 function procGithub() {
-  growBox(500, 400, 20, 'px');
-  var DynamicBackground = 'background-color: gray;';
-  
-  document.getElementById('backdrop').style.cssText 
-    = DynamicBackground;
-  document.getElementById('videodrop').style.cssText
-    = 'visibility: hidden;';
+  NAME = "<a href=https://github.com/Nathxniel/ppp>";
+  NAME += "ppp project on gitHub</a>";
 
-  document.getElementById('titlebar').style.cssText 
-    = 'font-style: normal; color: white; text-decoration: none;';
-  document.getElementById('titlebar').innerHTML 
-    = '<a href=https://github.com/Nathxniel/ppp>ppp project on gitHub</a>'; 
-  document.getElementById('leaveFor').innerHTML 
-    = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
+  OUTLINK = defaultOutlink;
+
+  title =  "font-style: normal; color: white;";
+  title += "text-decoration: none;";
+
+  background = "background-color: gray;";
+
+  video  = noVideo;
+  navbar = defaultNavbar;
+
+  growBox(500, 400, 20, "px");
+  editStyle(NAME, OUTLINK, title, background, video, navbar);
 }
 
 function procFacebook() {
-  growBox(505, 605, 20, 'px');
-  var DynamicBackground = 'background-color: rgb(59, 89, 152);';
-  DynamicBackground += 'background-image: url(' + randomML() + ');';
-  DynamicBackground += 'background-size: cover;';
-  
-  document.getElementById('backdrop').style.cssText
-    = DynamicBackground;
-  document.getElementById('videodrop').style.cssText
-    = 'visibility: hidden;';
+  NAME    = "<a href=https://www.facebook.com/ICLML/>ICL ML</a>";
+  OUTLINK = defaultOutlink;
 
-  document.getElementById('titlebar').style.cssText 
-    = 'border: 1px white solid;display: inline;background: white;border-radius: 10px;opacity: 0.5;';
-  document.getElementById('titlebar').innerHTML
-    = '<a href=https://www.facebook.com/ICLML/>ICL ML</a>';
-  document.getElementById('leaveFor').innerHTML
-    = '<a href=index.html onclick=growBox(400, 400, 20, "px")>home</a>';
+  title =  "border: 1px white solid; display: inline;";
+  title += "background: white; border-radius: 10px; opacity: 0.5;";
+
+  background = "background-color: rgb(59, 89, 152);";
+  background += "background-image: url(" + randomGif() + ");";
+  background += "background-size: cover;";
+  
+  video  = noVideo;
+  navbar = defaultNavbar;
+
+  growBox(505, 605, 20, "px");
+  editStyle(NAME, OUTLINK, title, background, video, navbar);
 }
 
-function randomML() {
+function editStyle(NAME, OUTLINK, title, background, video, navbar) {
+  document.getElementById("titlebar").innerHTML      = NAME;
+  document.getElementById("leaveFor").innerHTML      = OUTLINK;
+  document.getElementById("titlebar").style.cssText  = title;
+  document.getElementById("backdrop").style.cssText  = background;
+  document.getElementById("videodrop").style.cssText = video;
+  // do something with navbar
+}
+
+function randomGif() {
   var rand = Math.floor((Math.random() * 7) + 1);
-  return 'media/ai' + rand + '.gif';
+  return "media/ai" + rand + ".gif";
 }
 
 function randomVid() {
   var rand = Math.floor((Math.random() * 5) + 1);
-  return 'media/vid' + rand + '.mp4';
+  return "media/vid" + rand + ".mp4";
 }
