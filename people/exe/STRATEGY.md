@@ -13,7 +13,7 @@ first of all we conjecture that[\*][cs]:
   - `(1) UB and CB can both be influenced`
   - `(2) UB and CB can both influence each other`
 
-based on these conjectures and the sources in [src][./src], 
+based on these conjectures and the sources in [src](../src),
 we create conjectures and operate under the principles they outline as 
 to test their validity and effectiveness
 
