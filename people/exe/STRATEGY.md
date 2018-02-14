@@ -50,8 +50,8 @@ e.g., "i want to..."
     a [_net worth_][nw] of £56 million 
   - be recognised by 
     [_everyone_][al]
-  - be liked by everyone
-    ([_all-positive social interactions_][ap])
+  - have
+    [_all-positive social interactions_][ap]
   - have 
     proffesional knowledge of [_all computer systems_][cp]
 
