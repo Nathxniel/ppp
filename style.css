@@ -1,15 +1,16 @@
 .title {
-  text-align: center;
-  font-size: 2em;
   color: black;
+  text-align: center;
+
+  font-size: 2em;
 }
 
 .title h2 {
-  position: relative;
-  text-align: center;
   top: -2.5em;
-  font-size: 0.5em;
+  position: relative;
   visibility: hidden;
+
+  font-size: 0.5em;
 }
 
 .title a {
@@ -24,6 +25,7 @@
   text-decoration: none;
 }
 
+/* for index2.html */
 .title img {
   position: relative;
   top: -1.2em;
@@ -39,26 +41,10 @@
   border-style: solid double dotted dashed;
 }
 
-.navbar a {
+#navbar {
   text-align: center;
-  /*border: 1px white solid;
-  display: inline;
-  background: white;
-  border-radius: 10px;
-  opacity: 0.5;*/
   text-decoration: none;
   font-size: 1em;
-}
-
-.topics {
-  width: 50%;
-  bottom: 10%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.topics a {
-  text-decoration: underline;
 }
 
 a {
@@ -72,7 +58,7 @@ a:hover {
 
 body {
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 video {
@@ -96,32 +82,4 @@ movement {
 @keyframes movement {
   from { background-position: 0 0; }
   to { background-position: 100% 0 }
-}
-
-
-@media screen and (max-width: 800px) {
-
-  .title {
-    text-align: center;
-    font-size: 1em;
-    color: black;
-  }
-
-  .title h2 {
-    visibility: visible;
-    position: relative;
-    top: -2.5em;
-    font-size: 0.5em;
-    color: black;
-  }
-
-  body {
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-  }
-
-  a:visited {
-    text-decoration: underline;
-  }
-
 }

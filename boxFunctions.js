@@ -53,38 +53,41 @@ function prepPage() {
 
 function prepPort() {
   if (window.matchMedia("(max-width: 800px)").matches) {
-    growBox(504, 754, 20, "px");
+    growBox(504, 754, 50, "px");
   } else {
-    growBox(904, 1355, 30, "px");
+    growBox(904, 1355, 50, "px");
   }
+
+  fade(2);
+}
+
+function fade(seconds) {
+  $('body').css('display', 'none');
+  $('body').fadeIn(seconds * 1000);
+}
+
+function fadeIn(seconds) {
+  $(document).ready(function(){
+    fade(seconds);
+  });
 }
 
 function procPortfolio() {
-  $(document).ready(function(){
-    /*! Fades in page on load */
-    $('body').css('display', 'none');
-    $('body').fadeIn(2000);
-  });
-
   NAME =  "<a href=https://www.ammmanagement.com/modelsgallery/";
   NAME += "nathaniel-oshunniyi/ target=_blank>PORTFOLIO</a>";
 
   OUTLINK = defaultOutlink;
 
-  title =  "font-style: italic; color: black;";
+  title =  "font-style: italic; color: pink;";
   title += "text-decoration: overline underline";
 
-  background =  "background-image: url(pictures/trippy.jpg);";
-  background += "background-repeat: repeat-x;";
-  background += "background-color: gray;";
-  background += "background-position: 0px 0px;";
-  background += "animation: movement 40s linear infinite;";
+  background = "background-color: black;";
 
   video  = noVideo;
   navbar = defaultNavbar;
 
-  prepPort();
   editStyle(NAME, OUTLINK, title, background, video, navbar);
+  prepPort();
 }
 
 function procTwitter() {
@@ -98,13 +101,13 @@ function procTwitter() {
 
   background = "background-color: rgb(85, 172, 238);";
 
-  video =  "<source src'" + randomVid() + "' type='video/mp4'>";
+  video =  "<source src='" + randomVid() + "' type='video/mp4'>";
   video += "</source>";
 
   navbar = defaultNavbar;
 
-  prepPage();
   editStyle(NAME, OUTLINK, title, background, video, navbar);
+  prepPage();
 }
 
 function procLinkedin() {
@@ -121,8 +124,8 @@ function procLinkedin() {
   video  = noVideo;
   navbar = defaultNavbar;
 
-  growBox(255, 361, 20, "px");
   editStyle(NAME, OUTLINK, title, background, video, navbar);
+  growBox(255, 361, 20, "px");
 }
 
 function procAbout() {
@@ -137,8 +140,8 @@ function procAbout() {
   video  = noVideo;
   navbar = defaultNavbar;
 
-  growBox(400, 380, 20, "px");
   editStyle(NAME, OUTLINK, title, background, video, navbar);
+  growBox(400, 380, 20, "px");
 }
 
 function procGithub() {
@@ -155,8 +158,8 @@ function procGithub() {
   video  = noVideo;
   navbar = defaultNavbar;
 
-  growBox(500, 400, 20, "px");
   editStyle(NAME, OUTLINK, title, background, video, navbar);
+  growBox(500, 400, 20, "px");
 }
 
 function procFacebook() {
@@ -173,8 +176,8 @@ function procFacebook() {
   video  = noVideo;
   navbar = defaultNavbar;
 
-  growBox(505, 605, 20, "px");
   editStyle(NAME, OUTLINK, title, background, video, navbar);
+  growBox(505, 605, 20, "px");
 }
 
 function editStyle(NAME, OUTLINK, title, background, video, navbar) {
@@ -182,8 +185,7 @@ function editStyle(NAME, OUTLINK, title, background, video, navbar) {
   document.getElementById("leaveFor").innerHTML      = OUTLINK;
   document.getElementById("titlebar").style.cssText  = title;
   document.getElementById("backdrop").style.cssText  = background;
-  document.getElementById("videodrop").style.cssText = video;
-  // do something with navbar
+  document.getElementById("videodrop").innerHTML     = video;
 }
 
 function randomGif() {
