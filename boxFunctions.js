@@ -58,7 +58,7 @@ function prepPort() {
     growBox(904, 1355, 50, "px");
   }
 
-  fade(2);
+  fadeIn(2);
 }
 
 function fade(seconds) {
