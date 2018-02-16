@@ -13,7 +13,10 @@ var navbar;
 
 const defaultNavbar = "";
 const defaultOutlink = "<a href=index.html>home</a>";
-const noVideo = "visibility: hidden;";
+function noVideo() {
+  $('#videodrop').css('visibility', 'hidden');
+  return "";
+}
 
 function isMobileDevice() {
   return ((window.matchMedia("(max-width: 800px)").matches) ||
@@ -83,7 +86,7 @@ function procPortfolio() {
 
   background = "background-color: black;";
 
-  video  = noVideo;
+  video  = noVideo();
   navbar = defaultNavbar;
 
   editStyle(NAME, OUTLINK, title, background, video, navbar);
@@ -121,7 +124,7 @@ function procLinkedin() {
   background += "background-image: url(pictures/Network.jpg);";
   background += "background-size: cover;";
 
-  video  = noVideo;
+  video  = noVideo();
   navbar = defaultNavbar;
 
   editStyle(NAME, OUTLINK, title, background, video, navbar);
@@ -137,7 +140,7 @@ function procAbout() {
   background += "background-size: cover;";
   background += "background-color: pink;";
 
-  video  = noVideo;
+  video  = noVideo();
   navbar = defaultNavbar;
 
   editStyle(NAME, OUTLINK, title, background, video, navbar);
@@ -155,7 +158,7 @@ function procGithub() {
 
   background = "background-color: gray;";
 
-  video  = noVideo;
+  video  = noVideo();
   navbar = defaultNavbar;
 
   editStyle(NAME, OUTLINK, title, background, video, navbar);
@@ -173,7 +176,7 @@ function procFacebook() {
   background += "background-image: url(" + randomGif() + ");";
   background += "background-size: cover;";
   
-  video  = noVideo;
+  video  = noVideo();
   navbar = defaultNavbar;
 
   editStyle(NAME, OUTLINK, title, background, video, navbar);
