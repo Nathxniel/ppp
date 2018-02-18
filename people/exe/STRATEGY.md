@@ -55,7 +55,7 @@ e.g., "i want to..."
   - have 
     proffesional knowledge of [_all computer systems_][cp]
 
-this can be done in many ways [\*][nt]
+this can be done in many ways [\*][nt].
 
 [nt]: ./etc/notes.md
 
