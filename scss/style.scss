@@ -1,0 +1,50 @@
+.title {
+
+  position: relative;
+  text-align: center;
+  margin-top: 17%;
+  font-size: 2em;
+
+  a {
+
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      -webkit-transition: color 0.1s;
+      transition: color linear 0.1s;
+      color: red;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+.stage {
+  
+  position: absolute;
+  top: 31%;
+  left: 47%;
+  z-index: -1;
+
+}
+
+.navigation {
+
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
+  a {
+    
+    color: rgb(30,30,30);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+}
