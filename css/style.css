@@ -2,8 +2,7 @@
   position: relative;
   text-align: center;
   margin-top: 17%;
-  font-size: 2em;
-  z-index: 10; }
+  font-size: 2em; }
   .title a {
     color: black;
     text-decoration: none; }
@@ -16,7 +15,8 @@
 .stage {
   position: absolute;
   top: 31%;
-  left: 47%; }
+  left: 47%;
+  z-index: -1; }
 
 .navigation {
   position: relative;
@@ -27,5 +27,34 @@
     text-decoration: none; }
     .navigation a:hover {
       text-decoration: underline; }
+
+@media only screen and (max-device-width: 640px) {
+  .title {
+    position: relative;
+    text-align: center;
+    margin-top: 17%;
+    font-size: 80%; }
+    .title a {
+      color: black;
+      text-decoration: none; }
+      .title a:hover {
+        -webkit-transition: color 0.1s;
+        transition: color linear 0.1s;
+        color: red;
+        text-decoration: none; } }
+@media only screen and (max-device-width: 768px) {
+  .title {
+    position: relative;
+    text-align: center;
+    margin-top: 17%;
+    font-size: 80%; }
+    .title a {
+      color: black;
+      text-decoration: none; }
+      .title a:hover {
+        -webkit-transition: color 0.1s;
+        transition: color linear 0.1s;
+        color: red;
+        text-decoration: none; } }
 
 /*# sourceMappingURL=style.css.map */
