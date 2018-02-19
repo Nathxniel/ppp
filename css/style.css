@@ -32,16 +32,10 @@
   .title {
     position: relative;
     text-align: center;
-    margin-top: 17%;
-    font-size: 1em; }
+    font-size: 2em; }
     .title a {
       color: black;
-      text-decoration: none; }
-      .title a:hover {
-        -webkit-transition: color 0.1s;
-        transition: color linear 0.1s;
-        color: red;
-        text-decoration: none; } }
+      text-decoration: none; } }
 @media only screen and (max-device-width: 768px) {
   .title {
     position: relative;
@@ -50,11 +44,6 @@
     font-size: 1em; }
     .title a {
       color: black;
-      text-decoration: none; }
-      .title a:hover {
-        -webkit-transition: color 0.1s;
-        transition: color linear 0.1s;
-        color: red;
-        text-decoration: none; } }
+      text-decoration: none; } }
 
 /*# sourceMappingURL=style.css.map */
