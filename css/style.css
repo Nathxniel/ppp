@@ -1,3 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
 .title {
   position: relative;
   text-align: center;
@@ -27,23 +35,5 @@
     text-decoration: none; }
     .navigation a:hover {
       text-decoration: underline; }
-
-@media only screen and (max-device-width: 640px) {
-  .title {
-    position: relative;
-    text-align: center;
-    font-size: 2em; }
-    .title a {
-      color: black;
-      text-decoration: none; } }
-@media only screen and (max-device-width: 768px) {
-  .title {
-    position: relative;
-    text-align: center;
-    margin-top: 17%;
-    font-size: 1em; }
-    .title a {
-      color: black;
-      text-decoration: none; } }
 
 /*# sourceMappingURL=style.css.map */
