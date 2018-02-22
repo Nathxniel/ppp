@@ -10,9 +10,18 @@ html, body {
   background-size: cover;
   background-image: url(../media/waviestbackground.gif); }
 
+a {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none; }
+  a:hover {
+    color: red; }
+
 .content {
-  top: 70%;
-  left: 70%;
+  top: 50%;
+  left: 65%;
+  display: block;
   position: fixed; }
   .content img {
     z-index: 0;
@@ -24,19 +33,21 @@ html, body {
     z-index: -1;
     width: 290px;
     height: 200px;
-    margin-top: -10px;
-    position: fixed; }
+    position: fixed;
+    margin-top: -5px; }
 
-iframe {
-  visibility: hidden;
+.timeline {
+  top: 20%;
   left: 10%;
-  margin: 0;
-  padding: 0;
-  top: -200%;
-  width: 320px;
-  height: 200px;
   display: block;
-  position: absolute;
-  border-style: solid double dotted dashed; }
+  position: fixed; }
+  .timeline img {
+    z-index: 0;
+    position: fixed; }
+  .timeline iframe {
+    z-index: -1;
+    width: 530px;
+    height: 330px;
+    position: fixed; }
 
 /*# sourceMappingURL=twitter.css.map */

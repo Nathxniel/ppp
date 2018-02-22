@@ -40,8 +40,9 @@ html, body {
 .stage {
   top: 31%;
   left: 47%;
-  position: fixed;
   z-index: -1;
+  display: block;
+  position: fixed;
 }
 //@media only screen and (max-device-width : 640px) {
 //  .title {

@@ -34,7 +34,8 @@ html, body {
 .stage {
   top: 31%;
   left: 47%;
-  position: fixed;
-  z-index: -1; }
+  z-index: -1;
+  display: block;
+  position: fixed; }
 
 /*# sourceMappingURL=style.css.map */
