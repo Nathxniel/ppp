@@ -6,6 +6,10 @@ html, body {
   width: 100%;
   height: 100%; }
 
+#backdrop {
+  background-size: cover;
+  background-image: url(../media/waviestbackground.gif); }
+
 .content {
   top: 70%;
   left: 70%;
