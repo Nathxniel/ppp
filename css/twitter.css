@@ -34,7 +34,8 @@ a {
     width: 290px;
     height: 200px;
     position: fixed;
-    margin-top: -5px; }
+    margin-top: -5px;
+    background-color: pink; }
 
 .timeline {
   top: 20%;
@@ -46,8 +47,8 @@ a {
     position: fixed; }
   .timeline iframe {
     z-index: -1;
-    width: 530px;
-    height: 330px;
+    width: 540px;
+    height: 335px;
     position: fixed; }
 
 /*# sourceMappingURL=twitter.css.map */
