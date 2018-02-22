@@ -8,7 +8,7 @@ html, body {
 
 .page {
   top: 40%;
-  left: 20%;
+  width: 100%;
   display: block;
   position: fixed; }
   .page .title {
@@ -37,5 +37,12 @@ html, body {
   z-index: -1;
   display: block;
   position: fixed; }
+
+@media only screen and (max-device-width: 640px) {
+  .page .title {
+    font-size: 1em; } }
+@media only screen and (max-device-width: 768px) {
+  .page .title {
+    font-size: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
