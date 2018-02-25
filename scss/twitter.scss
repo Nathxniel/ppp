@@ -20,8 +20,9 @@ a {
   }
 }
 .content {
-  top: 50%;
+  top: 60%;
   left: 65%;
+  z-index: 1;
   display: block;
   position: fixed;
   img {
@@ -43,6 +44,7 @@ a {
 .timeline {
   top: 20%;
   left: 10%;
+  z-index: 1;
   display: block;
   position: fixed;
   img {
@@ -54,5 +56,24 @@ a {
     width: 540px;
     height: 335px;
     position: fixed;
+  }
+}
+.portfolio {
+  right: 20%;
+  z-index: 0;
+  display: block;
+  position: fixed;
+  #frame {
+    z-index: -1;
+    width: 283px;
+    height: 425px;
+    position: fixed;
+  }
+  #port {
+    z-index: 0;
+    width: 283px;
+    height: 425px;
+    position: fixed;
+    transform: scale(0.8);
   }
 }
