@@ -8,5 +8,5 @@ build:
 init:
 	mkdir ~/.fame
 
-install: build
+install: init build
 	cp -rt ~/.fame src/getData.js src/getInput.js src/node_modules
