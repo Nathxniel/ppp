@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>about me</title>
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta 
+    name="keywords"
+    content="Nathaniel, Oshunniyi, Computing Wizard">
+  <meta
+    name="description"
+    content="Computer Wizard and Artist">
+  <meta
+    name="author"
+    content="Nathaniel Oshunniyi">
+  <meta 
+    http-equiv="content-type" 
+    content="text/html; charset=UTF-8">
+  <link rel="icon" href="pictures/premierball.png">
+  <link rel="stylesheet" href="css/about.css" type="text/css">
+  <link rel="stylesheet" href="css/loadcube.css" type="text/css">
+  <script type="text/javascript" src="js/fades.js"></script>
+  <!-- external resources -->
+  <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+</head>
+</html>
+<body id="backdrop" onload="loadPage();">
+  <div class="cube" id="loadbar">
+    <div class="top"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+    <div class="left"></div>
+    <div class="front"></div>
+    <div class="back"></div>
+  </div>
+  <div id="page" style="display:none;"> 
+    <div class="back">
+      <a href="index.html"><h1>back</h1></a>
+    </div>
+    <iframe
+      src="content/about.html"
+      id="box"
+      name="leBox" 
+      sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation">
+    </iframe>
+  </div>
+  <script>
+    var tmp;
+    function loadPage() {
+      tmp = setTimeout(showPage, 1000);
+    }
+    function showPage() {
+      $("#loadbar").fadeOut(3000);
+      $("#page").fadeIn(500);
+      $("#backdrop").css("background-color", "black");
+    }
+  </script>
+</body>

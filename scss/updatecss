@@ -2,3 +2,4 @@
 
 sass style.scss ../css/style.css
 sass twitter.scss ../css/twitter.css
+sass about.scss ../css/about.css
