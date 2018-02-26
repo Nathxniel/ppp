@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# PRE: should work from anywhere
+
+# Makefile has init: creates .export_projects folder in $HOME
+# also creates a map from project names to remotes
+# also creates an .AGE file (int) for each project to free up space
+
+# Makefile has install: moves it to /bin/
+
+# 1) check for command line args
+# if none exit
+
+# 2) check that the project your talking about exists in ppp
+# if not exit
+
+# 3) check if project exists in .export_projects
+# if not then clone it
+# if so  then copy over the changes and push it to the repo 
+
+# 4) delete the ting if the age is over a certain value
