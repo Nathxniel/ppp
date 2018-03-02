@@ -21,7 +21,7 @@ to test their validity and effectiveness
 `(3) the CB and UB work together to update UB;` 
 `(4) the UB stores memories, opinions and personality;`
 
-thoughts that sprout from the CB are based on some combination of
+thoughts that sprout from the CB are based on some combination of:
 experiences, memories, opinions and (current) personality,
 which we will define as the _state_ of the mind, and we conjecture
 that the state of the mind is stored in the UB
@@ -29,17 +29,8 @@ that the state of the mind is stored in the UB
 the emotional responses to these thoughts are what 
 provoke change in the state of the UB
 
-## B) - when in social environments 
-`(5) UB is larger than CB in some abstract notion of capacity;`
-
-social environments have too much information for 
-the smaller CB to manage, so UB is most effective
-
-therefore, we would like UB to have more control in social
-environments[\*][nt]
-
-## C) - thinking
-`(6) "thinking" is done in CB;`
+## B) - thinking
+`(5) "thinking" is done in CB;`
 
 we would like CB to only positively influence UB towards goals,
 therefore thinking should be used to help the UB 
@@ -56,6 +47,17 @@ e.g., "i want to..."
     proffesional knowledge of [_all computer systems_][cp]
 
 this can be done in many ways [\*][nt].
+
+## C) - when in social environments 
+`(6) UB is larger than CB in some abstract notion of capacity;`
+
+social environments have too much information for 
+the smaller CB to manage, so UB is most effective for action
+(assuming action is based on the actor choosing to "follow"
+the wants of the CB versus the UB)
+
+therefore, we would like UB to have more control in social
+environments[\*][nt]
 
 [nt]: ./etc/notes.md
 
