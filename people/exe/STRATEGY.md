@@ -38,7 +38,7 @@ to develop and reinforce strategy _as best as possible_
 
 e.g., "i want to..."
   - have
-    a [_net worth_][nw] of £56 million 
+    a [_property net worth_][nw] of £56 million 
   - be recognised by 
     [_everyone_][al]
   - have
