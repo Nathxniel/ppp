@@ -7,11 +7,22 @@
 # also creates an .AGE file (int) for each project to free up space
 
 # Makefile has install: moves it to /bin/
+PPPHOME="$HOME/ppp"
+PROJECTS=`ls $PPPHOME/programming/programs`
+
+usage() {
+  echo "usage:" 
+  echo "  $ export_script [project name]"
+}
 
 # 1) check for command line args
-# if none exit
+if [ "$@"="" ]; then
+  usage;
+  exit 1;
+fi
 
 # 2) check that the project your talking about exists in ppp
+
 # if not exit
 
 # 3) check if project exists in .export_projects
