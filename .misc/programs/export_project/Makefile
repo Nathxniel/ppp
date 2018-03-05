@@ -1,4 +1,4 @@
-.PHONY: all init install clean
+.PHONY: all init install clean uninstall
 
 all: install
 
@@ -10,3 +10,6 @@ install:
 
 clean:
 	rm -rf ~/.export_projects
+
+uninstall:
+	rm -f /bin/export_projects
