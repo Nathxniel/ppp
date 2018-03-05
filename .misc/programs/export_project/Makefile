@@ -1,6 +1,6 @@
-.PHONY: all init install clean uninstall
+.PHONY: all install clean uninstall
 
-all: install
+all: clean init
 
 init:
 	mkdir -p ~/.export_projects

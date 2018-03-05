@@ -27,7 +27,7 @@ if [ "$?" -ne 0 ]; then
 fi
 
 # init
-rm -rf ~/.export_projects/$1
+rm -rf ~/.export_projects/*
 cp -r $PPPHOME/programming/programs/$1 ~/.export_projects
 cd ~/.export_projects/$1
 git init
@@ -36,4 +36,4 @@ git init
 git add -A
 git commit
 git remote add origin $PPREFIX$1.git
-git push -u origin master
+git push -f -u origin master
