@@ -3,7 +3,7 @@
 all: install
 
 init:
-	sh .init.sh
+	mkdir -p ~/.export_projects
 
 install:
 	cp export_projects /bin/

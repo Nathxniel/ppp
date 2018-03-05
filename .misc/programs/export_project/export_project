@@ -3,16 +3,37 @@
 PPPHOME="$HOME/ppp"
 PROJECTS=`ls $PPPHOME/programming/programs`
 
+PPREFIX="git@github.com:Nathxniel/"
+
 usage() {
   echo "usage:" 
   echo "  $ export_script [project name]"
+  echo ""
+  echo "projects:"
+  echo $PROJECTS
 }
 
-# 1) check for command line args
+# check for command line args
 if [ "$#" -eq 0 ]; then
   usage;
   exit 1;
 fi
 
-echo $PROJECTS
-exit 0;
+# does project exist
+echo $PROJECTS | grep $1
+if [ "$?" -ne 0 ]; then
+  echo "project $1 does not exist"
+  exit 1;
+fi
+
+# init
+rm -rf ~/.export_projects/$1
+cp -r $PPPHOME/programming/programs/$1 ~/.export_projects
+cd ~/.export_projects/$1
+git init
+
+# add commit push changes
+git add -A
+git commit
+git remote add origin $PPREFIX$1.git
+git push -u origin master
