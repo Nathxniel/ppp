@@ -6,10 +6,10 @@ init:
 	mkdir -p ~/.export_projects
 
 install:
-	cp export_projects /bin/
+	cp export_project /bin/
 
 clean:
 	rm -rf ~/.export_projects
 
 uninstall:
-	rm -f /bin/export_projects
+	rm -f /bin/export_project
