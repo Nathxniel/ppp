@@ -3,6 +3,10 @@ module SpeedReader.Read (speedRead, bookmarkRead) where
 import SpeedReader.Utils
 import SpeedReader.Bookmark
 
+-- add audioread
+-- audioRead :: Float -> [String] -> IO ()
+-- audioread _
+
 speedRead :: Float -> [String] -> IO ()
 -- takes wpm and list of strings as arguments
 speedRead _ []       = return ()
