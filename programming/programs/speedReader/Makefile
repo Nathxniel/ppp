@@ -1,11 +1,11 @@
-.PHONY: all init build clean
+.PHONY: all init install clean
 
-all: build
+all: install
 
 init:
 	mkdir -p ~/.speedReader
 
-build:
+install:
 	cabal install
 	sudo cp src/zipwav /bin/
 
