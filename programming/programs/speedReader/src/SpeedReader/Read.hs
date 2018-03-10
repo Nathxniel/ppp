@@ -40,8 +40,8 @@ bookmarkRead n f wpm ws = bmr n f wpm (skip 0 ws)
 -- helper function for bookmarkRead
 bmr :: Bookmark -> BookmarkName ->
        Float    -> [String]     -> IO ()
-bmr _ _ _ []       = return ()
-bmr _ f _ [w]      = writeBookmark 0 f >> writeWord w
+bmr _ f _ []       = writeBookmark 0 f
+bmr _ f _ [w]      = writeWord w >> writeBookmark 0 f
 bmr n f wpm (w:ws) = do
   writeWord w
   writeBookmark n f
