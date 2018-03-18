@@ -18,7 +18,7 @@ use CB to create the reality that you live in:
 
 ## when in social environments 
 
-set an agenda and mindlessly follow it:
+be consistent with intent and pay attention to nothing else
 
 social environments have too much information for 
 the smaller CB to manage, so UB is most effective for action
