@@ -55,9 +55,9 @@ processPDF fp f l = do
   return out
 
 createAudiobookWAV :: [String] -> IO ()
-createAudiobookWAV xs = do
+createAudiobookWAV (x:xs) = do
   -- create empty wav file
-  callCommand "rec tmp.wav trim 0 1"
+  callCommand $ "echo make | zipwav tmp.wav " ++ x
   putStrLn "done with making tmp file"
   createAudiobookWAV' xs
   putStrLn "done with making audio file"
