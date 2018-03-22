@@ -26,7 +26,7 @@ help =
   ,"  :q/quit = exit"
   ,"  :h/help = help"
   ,"  :b/b    = go up directory"
-  ,"  :l/ls   = show all directories"
+  ,"  :l/ls   = show all created directories"
   ,"  :t/touch filename = create empty file with given name"
   ,"  anything else creates dir of that name"
   ,"  (to create a dir with name, e.g., \"ls\" type :ls)"

@@ -36,9 +36,8 @@ loopBody d = do
     _        -> moveTo input
     where
       procQuit = return (False, d)
-      procHelp = help                >> return (True, d)
-      procBack = goBack d            >>= calcLoopState True
-      procList = ls d                >>  return (True, d)
+      procHelp = help     >> return (True, d)
+      procBack = goBack d >>= calcLoopState True
+      procList = ls d     >>  return (True, d)
       procTc h = writeFile h ":)"    >>  return (True, d)
       moveTo x = createAndMoveTo d x >>= calcLoopState True
-
