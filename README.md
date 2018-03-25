@@ -18,6 +18,3 @@ the ultimate goal is to be acheive a _rigidly defined goals_ in the following ar
 [3]: ./people
 [4]: ./property
 [5]: ./programming
-
-#### inspiration
-##### ice crimson ty soul king siegfreid
