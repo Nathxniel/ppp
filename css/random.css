@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+#backdrop {
+  background-size: cover;
+  background-image: url(../media/waviestbackground.gif); }
+
+#black {
+  width: 10000000%;
+  height: 10000000%;
+  visibility: hidden;
+  background-color: black;
+  z-index: -10;
+}
+
+a {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none; }
+  a:hover {
+    color: red; }
+
+.content {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: block;
+  position: fixed; }
+  .content img {
+    z-index: 0;
+    width: 290px;
+    height: 200px;
+    position: fixed;
+    transform: scale(1.1); }
+  .content video {
+    z-index: -1;
+    width: 290px;
+    height: 200px;
+    position: fixed;
+    margin-top: -5px;
+    background-color: pink; }
