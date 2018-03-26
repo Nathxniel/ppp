@@ -7,21 +7,28 @@ html, body {
   height: 100%;
 }
 .page {
-  top: 40%;
+  top: 25%;
   width: 100%;
   display: block;
   position: fixed;
   .title {
     font-size: 2em;
     text-align: center;
+    img {
+      width: 12%;
+      height: 12%;
+      padding: 20px;
+      border-style: solid double dotted dashed;
+    }
     a {
       color: black;
+      //margin-top: -6%;
       text-decoration: none;
       &:hover {
         color: red;
         text-decoration: none;
-        transition: color linear 0.1s;
-        -webkit-transition: color 0.1s;
+        transition: color linear 0.5s;
+        -webkit-transition: color 0.5s;
       }
     }
   }
