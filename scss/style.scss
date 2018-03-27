@@ -120,9 +120,17 @@ html, body {
   #dotcom {
     display: none;
   }
+  #face {
+    width: 40%;
+    height: 40%;
+  }
 }
 @media only screen and (max-device-width: 768px) {
   #dotcom {
     display: none;
+  }
+  #face {
+    width: 40%;
+    height: 40%;
   }
 }

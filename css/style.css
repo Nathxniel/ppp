@@ -129,9 +129,17 @@ html, body {
     filter: opacity(1); } }
 @media only screen and (max-device-width: 640px) {
   #dotcom {
-    display: none; } }
+    display: none; }
+
+  #face {
+    width: 40%;
+    height: 40%; } }
 @media only screen and (max-device-width: 768px) {
   #dotcom {
-    display: none; } }
+    display: none; }
+
+  #face {
+    width: 40%;
+    height: 40%; } }
 
 /*# sourceMappingURL=style.css.map */
