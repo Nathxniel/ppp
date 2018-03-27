@@ -15,10 +15,15 @@ html, body {
     font-size: 2em;
     text-align: center;
     img {
-      width: 12%;
-      height: 12%;
-      padding: 20px;
-      border-style: solid double dotted dashed;
+      color: red;
+      width: 20%;
+      height: 20%;
+      border-width: thick;
+      border-style: double;
+      animation: colours 80s infinite;
+      -o-animation: colours 80s infinite;
+      -moz-animation: colours 80s infinite;
+      -webkit-animation: colours 80s infinite;
     }
     a {
       color: black;
@@ -29,6 +34,9 @@ html, body {
         text-decoration: none;
         transition: color linear 0.5s;
         -webkit-transition: color 0.5s;
+      }
+      #dotom {
+        font-family: "Times New Roman", Times, serif;
       }
     }
   }
@@ -51,17 +59,69 @@ html, body {
   display: block;
   position: fixed;
 }
+@-webkit-keyframes colours {
+    0%   {color: red;
+          -webkit-filter: grayscale(0);}
+    20%  {color: green;
+          -webkit-filter: sepia(1);}
+    40%  {color: yellow;
+          -webkit-filter: saturate(8);}
+    60%  {color: blue;
+          -webkit-filter: hue-rotate(90deg);}
+    80%  {color: pink;
+          -webkit-filter: invert(.8);}
+    100% {color: purple;
+          -webkit-filter: opacity(1);}
+}
+@-moz-keyframes colours {
+    0%   {color: red;
+          -moz-filter: grayscale(0);}
+    20%  {color: green;
+          -moz-filter: sepia(1);}
+    40%  {color: yellow;
+          -moz-filter: saturate(8);}
+    60%  {color: blue;
+          -moz-filter: hue-rotate(90deg);}
+    80%  {color: pink;
+          -moz-filter: invert(.8);}
+    100% {color: purple;
+          -moz-filter: opacity(1);}
+}
+@-o-keyframes colours {
+    0%   {color: red;
+          -o-filter: grayscale(0);}
+    20%  {color: green;
+          -o-filter: sepia(1);}
+    40%  {color: yellow;
+          -o-filter: saturate(8);}
+    60%  {color: blue;
+          -o-filter: hue-rotate(90deg);}
+    80%  {color: pink;
+          -o-filter: invert(.8);}
+    100% {color: purple;
+          -o-filter: opacity(1);}
+}
+@keyframes colours {
+    0%   {color: red;
+          filter: grayscale(0);}
+    20%  {color: green;
+          filter: sepia(1);}
+    40%  {color: yellow;
+          filter: saturate(8);}
+    60%  {color: blue;
+          filter: hue-rotate(90deg);}
+    80%  {color: pink;
+          filter: invert(.8);}
+    100% {color: purple;
+          filter: opacity(1);}
+}
 @media only screen and (max-device-width : 640px) {
-  .page {
-    .title {
-      font-size: 1em;
-    }
-  } 
+  #dotcom {
+    display: none;
+  }
 }
 @media only screen and (max-device-width: 768px) {
-  .page {
-    .title {
-      font-size: 1em;
-    }
-  } 
+  #dotcom {
+    display: none;
+  }
 }
