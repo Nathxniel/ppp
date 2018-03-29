@@ -1,9 +1,8 @@
-#!/bin/bash
+#!/bin/bash 
 
 read fst
-if ! [ $fst="" ]; then
+if [[ $fst -eq 0 ]]; then
   pico2wave -w tmp.wav \"$@\" &>/dev/null  
-  echo "created tmp"
   exit 0;
 fi
 

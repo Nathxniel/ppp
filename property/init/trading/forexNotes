@@ -1,0 +1,5 @@
+buying and selling pairs
+pairs are in the form BASE/QUOTE
+e.g. EUR/USD
+  - you "buy the pair" if you think EUR will INCREASE (going long)
+  - you "sell the pair" if you think EUR will DECREASE (going short)
