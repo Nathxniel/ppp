@@ -1,5 +1,15 @@
 buying and selling pairs
 pairs are in the form BASE/QUOTE
 e.g. EUR/USD
-  - you "buy the pair" if you think EUR will INCREASE (going long)
-  - you "sell the pair" if you think EUR will DECREASE (going short)
+  - you "buy the pair" if you think EUR will INCREASE against USD (going long)
+  - you "sell the pair" if you think EUR will DECREASE against USD (going short)
+
+a pip is 0.0001 movement (except from when quote is yen)
+a standard lot is 100,000 units of base currency
+
+buyers are bulls
+sellers are bears
+
+ask price is price you pay as the buyer (aka offer price)
+bid price is price you receive as the seller
+  - the difference between the two is the "spread"
