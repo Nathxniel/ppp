@@ -15,6 +15,13 @@ the ultimate goal is to be acheive a _rigidly defined goals_ in the following ar
   - [_financial skills_][4]; skills pertaining to the management or manipulation of money (property investment, trading, etc)
   - [_technical skills_][5]; skills pertaining to physical endevours (computer technical, pyrotechnical, etc)
 
+### how to digest this project
+the aim is to read all of the resources and information in the people/ programming/ and property/ folders/directories
+and try to live by STRATEGY.md
+
+  - .p/ersonal are additional resources to get to know _me_ better
+  - .p/rograms are meta-project scripts
+
 [3]: ./people
 [4]: ./property
 [5]: ./programming
