@@ -16,11 +16,11 @@ the ultimate goal is to be acheive a _rigidly defined goals_ in the following ar
   - [_technical skills_][5]; skills pertaining to physical endevours (computer technical, pyrotechnical, etc)
 
 ### how to digest this project
-the aim is to read all of the resources and information in the people/ programming/ and property/ folders/directories
-and try to live by STRATEGY.md
+the aim is to read all of the resources and information in the people/ programming/ and property/ folders/directories. the order
+in which you consume the material does not matter.
 
-  - .p/ersonal are additional resources to get to know _me_ better
-  - .p/rograms are meta-project scripts
+for the material in the .p folder: .p/ersonal contains additional resources to get to know _me_ better,
+and .p/rograms contains meta-project scripts
 
 [3]: ./people
 [4]: ./property
