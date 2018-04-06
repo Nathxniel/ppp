@@ -56,14 +56,11 @@ processPDF fp f l = do
 
 createAudiobookWAV :: [String] -> IO ()
 createAudiobookWAV (x:xs) = do
-  -- create empty wav file
-  callCommand $ "echo make | zipwav tmp.wav " ++ x
-  putStrLn "done with making tmp file"
+  putStrLn "Creating audiobook.. (please wait, this may take a while)"
+  callCommand $ "echo make | zipwav " ++ x
   createAudiobookWAV' xs
-  putStrLn "done with making audio file"
 
 createAudiobookWAV' []     = pure ()
 createAudiobookWAV' (s:ss) = do
-  putStrLn $ "zipwav tmp.wav \"" ++ s ++ "\""
-  callCommand $ "zipwav tmp.wav \"" ++ s ++ "\""
+  callCommand $ "echo nomake | zipwav \"" ++ s ++ "\""
   createAudiobookWAV' ss
