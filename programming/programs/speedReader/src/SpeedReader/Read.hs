@@ -8,15 +8,23 @@ import SpeedReader.File
 
 audioRead :: String -> IO ()
 -- takes an unparsed input (from pdftotext)
--- returns a wav file and plays it
+-- returns a wav file
 --
--- print filename to screen
+-- remove "" and \n from the pdftotext
 audioRead xs = createAudiobookWAV $ sentence $ filter' xs
   where sentence (x:xs) = nub $ buffering [] (x:xs)
         buffering buffer ('.':xs) = (buffer ++ ".") : buffering [] xs
         buffering buffer (x:xs)   = buffering (buffer ++ [x]) xs
         buffering buffer []       = buffer : []
-        filter' = filter (/='\n')
+        --filter' = filter (flip notElem "\n\"-=~`¬")
+        --sanitise input for problematic characters
+        filter' ('\n':xs) = ' ' : filter' xs
+        filter' ('\"':xs) = ' ' : filter' xs
+        filter' ('~':xs)  = ' ' : filter' xs
+        filter' ('-':xs)  = ' ' : filter' xs
+        filter' ('=':xs)  = ' ' : filter' xs
+        filter' (x:xs)    = x : filter' xs
+        fitler' []        = []
 
 speedRead :: Float -> [String] -> IO ()
 -- takes wpm and list of strings as arguments
