@@ -1,4 +1,6 @@
+.gitignore
 *.swp
 scss/
+info/
 media/vid2.mp4
 media/vid4.mp4
