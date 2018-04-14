@@ -12,6 +12,8 @@ conjecture: CB stores "short term memory"
     functionality that it is essentially useless.
   - salvia divinorum appears to have such a profoundly unique
     effect on the body that it inevitably leads CB activity
+  - lysergic acid diethylamide appears to have a profound effect
+    on both the UB and CB
 
 ### rituals and prayer appear to be effective in updating UB
 conjecture: the more "important" something is to the UB, the more likely
