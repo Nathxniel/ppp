@@ -25,6 +25,8 @@ the smaller CB to manage, so UB is most effective for action
 (assuming action is based on the actor choosing to "follow"
 the wants of the CB versus the UB)
 
+"try not to keep track of any thoughts or decisions"
+
 substances can be helpful or harmful for this strategy.
 see [notes][nt] for more information
 
