@@ -15,6 +15,9 @@ conjecture: CB stores "short term memory"
   - lysergic acid diethylamide appears to have a profound effect
     on both the UB and CB
 
+#### being "tired" is an altered mind state, like substances
+  - intolerance towards distractions
+
 ### rituals and prayer appear to be effective in updating UB
 conjecture: the more "important" something is to the UB, the more likely
 it is going to be added to the UB
