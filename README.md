@@ -22,6 +22,11 @@ in which you consume the material does not matter.
 for the material in the .p folder: .p/ersonal contains additional resources to get to know _me_ better,
 and .p/rograms contains meta-project scripts
 
+### notes
+all of the resources included in here do not represent _all_ of the information gathered pertaining to these
+goals since the start of the project. the resources included are perhaps the ones of most impact, or the ones
+i simply felt like including.
+
 [3]: ./people
 [4]: ./property
 [5]: ./programming
