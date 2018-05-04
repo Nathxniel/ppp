@@ -16,6 +16,9 @@ use CB to create the reality that you live in:
 - i have [all-positive][ap] social interactions
 - i know [everything][cp] about computer systems
 
+try not to think too much about something new before having
+experienced it. just "skim through the instructions", so to speak
+
 ## when in social environments 
 
 be consistent with intent and pay attention to nothing else
