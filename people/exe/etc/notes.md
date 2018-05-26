@@ -14,6 +14,7 @@ conjecture: CB stores "short term memory"
     effect on the body that it inevitably leads CB activity
   - lysergic acid diethylamide appears to have a profound effect
     on both the UB and CB
+  - tabacco has medititave effects
 
 #### being "tired" is an altered mind state, like substances
   - intolerance towards distractions
