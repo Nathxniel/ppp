@@ -5,6 +5,7 @@ function fade(seconds) {
 
 function fadeIn(seconds) {
   $(document).ready(function(){
+    /*
   var sites = 3;
   var rand = Math.floor((Math.random() * sites) + 1);
   var backtext = '<img id="face" alt-text="me" src="./pictures/face-ass.jpg"></img><h1 id="dotcom">nathaniel oshunniyi</h1></a>';
@@ -24,6 +25,7 @@ function fadeIn(seconds) {
 
     };
     $('.title').html(backtext);
-  });
+    */
   fade(seconds);
+  });
 }
