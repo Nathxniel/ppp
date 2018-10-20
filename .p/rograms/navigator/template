@@ -89,7 +89,7 @@ fi
 
 # move to correct directory
 #- VAR
-cd ~/ppp/XXX
+cd ~/ppp/generation1/XXX
 if ! [ -z "$2" ]; then
   if [ "$2" == "AAA" ] || 
      [ "$2" == "BBB" ] || 
