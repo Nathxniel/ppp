@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Artwork Digital Download: Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Nathaniel, Ozuski, Oluwaseun, Oshunniyi">
+  <meta name="description" content="digital download purchase">
+  <meta name="author" content="Nathaniel Oshunniyi">
+  
+  <link rel="icon" href="https://nathanielozuski.com/pictures/logo_signature.png">
+  
+  <script type="text/javascript" src="https://nathanielozuski.com/js/fades.js"></script>
+  <!-- external resources -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body onload="fadeIn(1)" style="">
+  <div>
+
+    <!-- <img alt-text="me" src=" "
+    style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5%; margin-top: 5%; width: 50%;"> -->
+
+    <table style="background-image:url(' https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/df03765c-4963-440f-b65c-9d892bd45ba3/deeq3lw-3e79fb8a-8b48-4b6a-96ca-8501d6a99cad.png/v1/fill/w_1600,h_900,q_80,strp/wifi_by_natozuski_deeq3lw-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD05MDAiLCJwYXRoIjoiXC9mXC9kZjAzNzY1Yy00OTYzLTQ0MGYtYjY1Yy05ZDg5MmJkNDViYTNcL2RlZXEzbHctM2U3OWZiOGEtOGI0OC00YjZhLTk2Y2EtODUwMWQ2YTk5Y2FkLnBuZyIsIndpZHRoIjoiPD0xNjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.jR2OC2Bzp8gemIU-Kn_wXFHxtysItHOz9clJQcvU-p8 ');display: block; margin-left: auto; margin-right: auto; margin-bottom: 5%; margin-top: 5%; width: 50%; height: 500px;"><tr><td></td></tr></table>
+
+    <h1 style="text-align: center;"> "Wifi" Digital Download </h1>
+
+    <p style="text-align: center;"> Artwork Digital Download purchase: 10 GBP </p>
+
+    <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=GBP" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'white',
+            layout: 'vertical',
+            label: 'pay',
+            
+          },
+
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{"description":" Artwork Digital Download purchase: 10 GBP ","amount":{"currency_code":"GBP","value":10}}]
+            });
+          },
+
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+          },
+
+          onError: function(err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+    </script>
+  </div>
+
+</body></html>
