@@ -14,12 +14,27 @@ now that we are on generation 3 and we have a better understanding of what the f
 as a hommage to the original concept, we will be keeping the name 'ppp' :)
 
 
-# La bibliothéque de Nathaniel
+# How to use this 'software'
 
-Des livres pour vivre. 
+Read all of the information you possibly can throughout the commits including sources and then read [this][1].
 
-### Why GitHub?
+# FAQ
 
-I like it. What do you think of [this][1]?
+## What is this?
+
+it's a self help project designed to be a 'software for the mind' to improve one's living experience.
+
+## What does this 'software' do?
+
+It's designed to help and individual improve their life.
+
+## How did this project start?
+
+It started as a way to organise and cross-reference self-help articles to try to find a rigourous throughline 'protocol' - "what are the foundational things that all 'self help' content promote?".
+
+## What is the future of this project?
+
+As more and more resources and 'code' is added to the project the plan is to organise in a way that is accessible to an uninitiated person. We believe it is not at that state at the moment.
+
 
 [1]: ./generation1/README.pdf
