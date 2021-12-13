@@ -27,11 +27,14 @@
   </script>
 </head>
 <body onload="fadeIn(1)">
+  
   <!-- spook -->
   <div id="city"></div>
   <div id="country"></div>
   <div id="location"></div>
+  <div id="ip"></div>
   <p>:)</p>
+  
   <div class="page">
     <div class="title">
       <a href="https://linktr.ee/natozuski">
@@ -69,7 +72,8 @@
            $("#city").html("your location is " + response.city);
             $("#country").html(response.country);
              $("#location").html(response.timezone);
-           console.log(response.ip, response.country,response.loc);
+              $("#ip").html("ip: " + response.ip);
+           console.log(response.city, response.country,response.timezone, response.ip);
 
         },
 
