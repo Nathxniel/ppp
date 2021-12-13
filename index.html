@@ -23,11 +23,15 @@
   <script type="text/javascript" src="js/fades.js"></script>
   <!-- external resources -->
   <script 
-    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
 </head>
 <body onload="fadeIn(1)">
-  <!--<img alt-text="payme" src="./pictures/PAYNAX_QRcode.png"></img>-->
+  <!-- spook -->
+  <div id="city"></div>
+  <div id="country"></div>
+  <div id="location"></div>
+  <p>:)</p>
   <div class="page">
     <div class="title">
       <a href="https://linktr.ee/natozuski">
@@ -51,5 +55,31 @@
       <div class="face6"></div>
     </div>
   </div>
+  
+  <!-- spook -->
+  <script>
+  function ipLookUp () {
+   $.ajax({
+          url: 'https://ipinfo.io',
+          dataType: 'jsonp',       
+          jsonp: 'callback',
+      })
+    .then(
+        function success(response) {
+           $("#city").html("your location is " + response.city);
+            $("#country").html(response.country);
+             $("#location").html(response.timezone);
+           console.log(response.ip, response.country,response.loc);
+
+        },
+
+        function fail(data, status) {
+            console.log('Request failed.  Returned status of',
+                        status);
+        }
+    );
+  }
+  ipLookUp()
+  </script>
 </body>
 </html>
