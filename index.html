@@ -33,6 +33,7 @@
   <div id="country"></div>
   <div id="location"></div>
   <div id="ip"></div>
+  <input type="text" id="UserAgent">
   <p>:)</p>
   
   <div class="page">
@@ -84,6 +85,7 @@
     );
   }
   ipLookUp()
+  document.getElementById('UserAgent').value = navigator.userAgent;
   </script>
 </body>
 </html>
