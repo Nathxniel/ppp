@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEMO: Exam Submissions</title>
+	<meta 
+	name="viewport" 
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta 
+	name="keywords"
+	content="Nathaniel, Ozuski, Oluwaseun, Oshunniyi">
+	<meta
+	name="description"
+	content="Artist">
+	<meta
+	name="author"
+	content="Nathaniel Oshunniyi">
+	<meta 
+	http-equiv="content-type" 
+	content="text/html; charset=UTF-8">
+	
+<!-- internal resources -->
+	<!-- -- -->
+
+<!-- external resources -->
+	<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+</head>
+
+<body>
+	<h1>SAMPLE EXAM</h1>
+	<p>(scroll down for content)</p>
+	<br/>
+	
+<!-- insert question -->
+<!-- NOTE:
+this is nominally a 'theory' type question (as opposed to 'objective' or 'practical') -->
+	<h2>2016 WAEC Agricultural Science Theory (a)</h2>
+	<!-- question content -->
+	<p>What is farm surveying? (2 marks)</p>
+
+	<!-- insert textbox -->
+	<textarea 
+	type="text" 
+	rows="3" 
+	cols="30" 
+	class="aaa"
+	placeholder="insert answer here (drag bottom-right corner to rezize box)">
+	</textarea>
+	<br/>
+
+	<!-- insert 'submit' button -->
+	<!--    onclick= mark question 1 -->
+	<button onclick="aab()">submit answer</button>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<p class="aaa"></p>
+
+<!-- CSS STYLING -->
+	<style type="text/css">
+
+		* {
+			text-align: center;
+		}
+
+		textarea {
+			value: "";
+		}
+
+	</style>
+
+
+<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+
+// function aab: mark question
+		function aab() {
+
+			// 		aab = userinput
+			var 	aab = document.getElementsByClassName("aaa")[0].value.toLowerCase();
+			// 		aac = answer tokens
+			const 	aac = ["measure", "measuring", "map", "position", "size", "boundary", "area"]
+			// 		aad = mark counter
+			var 	aad = 0;
+			// 		aae = total marks (2)
+			const	aae = 2; 
+
+			//   aaf = for loop counter
+			for (aaf = 0; (aaf < aac.length) && (aad < aae); aaf++) {
+
+				if (aab.includes(aac[aaf])) {
+					aad++;
+				} 
+
+			}
+
+			alert("you got " + aad + " mark(s)");
+			document.getElementsByClassName("aaa")[1].innerHTML = "you got " + aad + " mark(s)";
+		}
+
+</script>
+</body
+
