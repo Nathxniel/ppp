@@ -2,7 +2,7 @@ PROJECT FALCON
 
 # Update 7-jul-22
 
-the link on this page has been removed
+the linked document on this page has been removed
 
 # Update 1-jun-21
 
